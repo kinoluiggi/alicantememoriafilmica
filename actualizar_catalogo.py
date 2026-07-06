@@ -109,6 +109,11 @@ def barrer_fotos():
                     mr = RE_CARPETA_RANGO.match(carpeta)
                     if mr:
                         period = f"{mr.group(1)}\u2013{mr.group(2)}"
+                    else:
+                        # carpeta temática: "Castillo... Años 1936-1937. Coleccion Loty"
+                        my = RE_SUELTO.search(carpeta)
+                        if my:
+                            year, circa = int(my.group(1)), True
             if es_nombre_basura(nombre):
                 titulo = ""
             else:
