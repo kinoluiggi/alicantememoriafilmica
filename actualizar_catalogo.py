@@ -22,8 +22,8 @@ YTDLP_EXTRA = os.environ.get("YTDLP_EXTRA", "").split()
 
 # ---------- detección de año ----------
 RE_CIRCA = re.compile(r"\(\s*c\.?\s*(\d{4})\s*\)")
-RE_PAREN = re.compile(r"\((\d{4})\s*\)")
-RE_SUELTO = re.compile(r"\b(18\d{2}|19\d{2}|20[0-2]\d)\b")
+RE_PAREN = re.compile(r"\((1[5-9]\d{2}|20[0-2]\d)\s*\)")
+RE_SUELTO = re.compile(r"(?<!\d)(1[5-9]\d{2}|20[0-2]\d)(?!\d)")
 
 def detectar_ano(titulo):
     """Devuelve (año, circa) o (None, False)."""
@@ -69,6 +69,77 @@ def normalizar_manual(entrada):
     e["title"] = (e.get("title") or "").strip()
     return e
 
+# ---------- fototeca local ----------
+EXT_FOTO = {".jpg", ".jpeg", ".png", ".webp"}
+RE_CARPETA_DECADA = re.compile(r"^(1[5-9]|20)\d0s?$")
+RE_CARPETA_RANGO = re.compile(r"^(1[5-9]\d{2})\s*[-_]\s*(1[5-9]\d{2}|20\d{2})$")
+
+def es_nombre_basura(nombre):
+    """detecta nombres tipo descarga de Facebook: 186513774_..._n"""
+    limpio = re.sub(r"[\d_\-n]", "", nombre.lower())
+    return len(limpio) <= 2
+
+def barrer_fotos():
+    """Barre la carpeta fotos/ del repositorio. Año desde el nombre
+    (1926_paseo.jpg, c1935_balneario.jpg) o, en su defecto, la década
+    de la carpeta contenedora (marcada como circa)."""
+    base = os.path.join(AQUI, "fotos")
+    if not os.path.isdir(base):
+        return []
+    piezas = []
+    for raiz, _dirs, archivos in os.walk(base):
+        carpeta = os.path.basename(raiz)
+        for a in sorted(archivos):
+            nombre, ext = os.path.splitext(a)
+            if ext.lower() not in EXT_FOTO:
+                continue
+            year, circa, period = None, False, None
+            m = re.match(r"^c\.?_?(1[5-9]\d{2}|20\d{2})", nombre)
+            if m:
+                year, circa = int(m.group(1)), True
+            else:
+                m = RE_SUELTO.search(nombre)
+                if m:
+                    year = int(m.group(1))
+            if not year:
+                if RE_CARPETA_DECADA.match(carpeta):
+                    year, circa = int(carpeta[:4]), True
+                else:
+                    mr = RE_CARPETA_RANGO.match(carpeta)
+                    if mr:
+                        period = f"{mr.group(1)}\u2013{mr.group(2)}"
+            if es_nombre_basura(nombre):
+                titulo = ""
+            else:
+                titulo = RE_SUELTO.sub("", re.sub(r"^c\.?_?", "", nombre))
+                titulo = titulo.replace("_", " ").replace("-", " ")
+                titulo = re.sub(r"\s+", " ", titulo).strip(" ,.").strip()
+                if titulo and titulo == titulo.lower():
+                    titulo = titulo.capitalize()
+            pieza = {
+                "source": "foto",
+                "file": os.path.relpath(os.path.join(raiz, a), AQUI).replace(os.sep, "/"),
+                "title": titulo,
+                "year": year,
+                "circa": circa,
+            }
+            if period:
+                pieza["period"] = period
+            piezas.append(pieza)
+    # fusionar metadatos curados (fotos_meta.json), si existen
+    meta_path = os.path.join(AQUI, "fotos_meta.json")
+    if os.path.exists(meta_path):
+        with open(meta_path, encoding="utf-8") as f:
+            meta = {m["file"]: m for m in json.load(f) if m.get("aprobado")}
+        for p in piezas:
+            m = meta.get(p["file"])
+            if not m:
+                continue
+            for campo in ("title", "year", "circa", "period", "description", "master"):
+                if m.get(campo) not in (None, ""):
+                    p[campo] = m[campo]
+    return piezas
+
 def main():
     with open(FUENTES, encoding="utf-8") as f:
         fuentes = json.load(f)
@@ -83,15 +154,20 @@ def main():
         if entrada.get("activo", True):
             piezas.append(normalizar_manual(entrada))
 
+    fotos = barrer_fotos()
+    if fotos:
+        print(f"→ fototeca local: {len(fotos)} fotos")
+        piezas += fotos
+
     # Guardia: si todo falló, no tocar el catálogo existente
     if not piezas:
         print("!! Ninguna fuente devolvió piezas. Se conserva el catálogo anterior.", file=sys.stderr)
         sys.exit(1)
 
-    # deduplicar por (source, id) o url
+    # deduplicar por (source, id) o ruta/url
     vistos, unicos = set(), []
     for p in piezas:
-        clave = (p.get("source"), p.get("id") or p.get("url"))
+        clave = (p.get("source"), p.get("id") or p.get("file") or p.get("url"))
         if clave in vistos:
             continue
         vistos.add(clave)
@@ -104,27 +180,29 @@ def main():
             y, circa = detectar_ano(p["title"])
             p["year"] = y
             p["circa"] = circa
-        if not p["year"]:
-            sin_ano.append(p["title"])
+        if not p["year"] and not p.get("period"):
+            sin_ano.append(p["title"] or p.get("file", "?"))
 
     unicos.sort(key=lambda x: (x["year"] is None, x["year"] or 0, x["title"]))
 
     with open(SALIDA, "w", encoding="utf-8") as f:
         json.dump(unicos, f, ensure_ascii=False, indent=1)
 
-    # re-embeber en index.html si existe
-    index = os.path.join(AQUI, "index.html")
-    if os.path.exists(index):
-        with open(index, encoding="utf-8") as f:
+    # re-embeber en las páginas que llevan el catálogo dentro
+    for pagina in ("index.html", "fotos.html"):
+        ruta = os.path.join(AQUI, pagina)
+        if not os.path.exists(ruta):
+            continue
+        with open(ruta, encoding="utf-8") as f:
             html = f.read()
         nuevo = re.sub(
             r"/\*CATALOGO\*/.*?/\*FIN\*/",
             "/*CATALOGO*/" + json.dumps(unicos, ensure_ascii=False) + "/*FIN*/",
             html, flags=re.S,
         )
-        with open(index, "w", encoding="utf-8") as f:
+        with open(ruta, "w", encoding="utf-8") as f:
             f.write(nuevo)
-        print("✓ catálogo re-embebido en index.html")
+        print(f"✓ catálogo re-embebido en {pagina}")
 
     con_ano = [p for p in unicos if p["year"]]
     print(f"✓ {len(unicos)} piezas ({len(con_ano)} datadas, {len(sin_ano)} sin datar)")
