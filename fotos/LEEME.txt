@@ -1,0 +1,15 @@
+Aquí van las carpetas de la fototeca, por década o periodo:
+
+  fotos/1500-1700/   (grabados y vistas antiguas)
+  fotos/1890s/
+  fotos/1900s/
+  fotos/1920s/
+  ...
+
+El año de cada imagen se lee del nombre del archivo:
+  1926_paseo_explanada.jpg   -> 1926
+  c1929_puerto.jpg           -> circa 1929
+  mercado_central.jpg        -> hereda la década de su carpeta (circa)
+
+Las copias web se generan con preparar_fotos.py desde tus másteres.
+Este archivo LEEME.txt puede borrarse cuando subas las fotos.

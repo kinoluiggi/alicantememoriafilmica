@@ -134,6 +134,73 @@ section .onda{margin-bottom:28px}
 }
 .fuente a{color:var(--mar);text-decoration-color:rgba(51,112,140,.4)}
 
+
+/* ---------- filtro cine/foto ---------- */
+nav .filtro{
+  display:flex;gap:6px;margin-right:14px;padding-right:14px;
+  border-right:1px solid #CBBE9D;
+}
+nav .filtro .fototeca-link{
+  font-family:'IBM Plex Mono',monospace;font-size:13px;text-decoration:none;
+  background:var(--almagra);color:var(--cal);border-radius:999px;
+  padding:5px 13px;white-space:nowrap;
+}
+nav .filtro .fototeca-link:hover,nav .filtro .fototeca-link:focus-visible{
+  background:var(--tinta);outline:none;
+}
+nav .filtro button{
+  font-family:'IBM Plex Mono',monospace;font-size:13px;cursor:pointer;
+  background:none;border:1px solid transparent;border-radius:999px;
+  padding:5px 13px;color:var(--arena);white-space:nowrap;
+}
+nav .filtro button[aria-pressed="true"]{
+  background:var(--almagra);color:var(--cal);
+}
+nav .filtro button:focus-visible{outline:2px solid var(--almagra);outline-offset:2px}
+
+/* ---------- ficha de fotografía ---------- */
+.ficha.es-foto .pantalla{aspect-ratio:4/3;background:var(--piedra)}
+.ficha.es-foto .pantalla img{object-fit:contain;background:var(--marmol)}
+.ampliar{
+  position:absolute;inset:0;width:100%;height:100%;
+  background:none;border:0;cursor:zoom-in;
+  display:flex;align-items:flex-end;justify-content:flex-start;
+  font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;
+  color:var(--cal);padding:10px 12px;text-transform:uppercase;
+  text-shadow:0 1px 4px rgba(0,0,0,.7);
+}
+.ampliar:focus-visible{outline:3px solid var(--almagra);outline-offset:-3px}
+
+/* ---------- lightbox ---------- */
+#lightbox{
+  position:fixed;inset:0;z-index:100;display:none;
+  background:rgba(28,27,24,.94);
+  align-items:center;justify-content:center;flex-direction:column;
+  padding:32px;cursor:zoom-out;
+}
+#lightbox.abierto{display:flex}
+#lightbox img{
+  max-width:100%;max-height:calc(100% - 64px);
+  box-shadow:0 12px 60px rgba(0,0,0,.6);
+}
+#lightbox figcaption{
+  margin-top:16px;color:var(--cal);text-align:center;max-width:70ch;
+}
+#lightbox figcaption .ano-lb{
+  font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;
+  color:var(--ambar,#E0B87A);display:block;margin-bottom:4px;color:#E0B87A;
+}
+#lightbox .cerrar{
+  position:absolute;top:18px;right:22px;
+  background:none;border:1px solid rgba(242,234,218,.4);border-radius:999px;
+  color:var(--cal);font-family:'IBM Plex Mono',monospace;font-size:13px;
+  padding:6px 14px;cursor:pointer;
+}
+#lightbox .cerrar:hover,#lightbox .cerrar:focus-visible{border-color:var(--cal);outline:none}
+
+.titulo.anonima{font-style:italic;color:var(--arena);font-weight:400}
+.descripcion{font-size:14.5px;color:#5B6E7A;line-height:1.45}
+
 /* ---------- pie ---------- */
 footer{border-top:1px solid #D8CCAF;padding:36px 24px 60px}
 footer .caja{max-width:1080px;margin:0 auto;font-size:15px;color:#4A6170}
@@ -151,7 +218,12 @@ footer .mono{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing
   <div class="stats" id="stats"></div>
 </header>
 
-<nav aria-label="Décadas"><div class="fila" id="navdec"></div></nav>
+<nav aria-label="Décadas y filtros"><div class="fila">
+  <div class="filtro">
+    <a class="fototeca-link" href="fotos.html">▦ Fototeca →</a>
+  </div>
+  <div style="display:contents" id="navdec"></div>
+</div></nav>
 
 <main id="linea"></main>
 
@@ -159,9 +231,15 @@ footer .mono{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing
   <div class="caja">
     <p class="mono">▲■● Alicante Memoria Fílmica</p>
     <p>Proyecto de recuperación de la memoria audiovisual alicantina iniciado en 2020. Las piezas se reproducen desde sus fuentes originales; los derechos pertenecen a sus titulares y los materiales se reúnen aquí con fines de documentación y divulgación.</p>
-    <p>Canal: <a href="https://www.youtube.com/@alicantememoriafilmica" rel="noopener">youtube.com/@alicantememoriafilmica</a> · Un proyecto hermano de <a href="https://www.naranjasdehiroshima.com" rel="noopener">Naranjas de Hiroshima</a>.</p>
+    <p>Canal: <a href="https://www.youtube.com/@alicantememoriafilmica" rel="noopener">youtube.com/@alicantememoriafilmica</a> · La colección de imágenes fijas vive en la <a href="fotos.html">Fototeca</a>. Un proyecto hermano de <a href="https://www.naranjasdehiroshima.com" rel="noopener">Naranjas de Hiroshima</a>.</p>
   </div>
 </footer>
+
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Fotografía ampliada">
+  <button class="cerrar" id="lbcerrar">Cerrar ✕</button>
+  <img id="lbimg" src="" alt="">
+  <figcaption><span class="ano-lb" id="lbano"></span><span id="lbtitulo"></span></figcaption>
+</div>
 
 <script>
 const CATALOGO = /*CATALOGO*/[{"id": "0CMqB7u8Vcg", "title": "Alfonso XIII en Alicante (1905)", "source": "youtube", "year": 1905, "circa": false}, {"id": "lwDk_i3CRRk", "title": "El paseo de Alicante en 1926 (1926)", "source": "youtube", "year": 1926, "circa": false}, {"id": "_xkGfmWoO34", "title": "Alicante. Construcción del ferrocarril en Tibi, Venta de Llémena y Castalla (1928)", "source": "youtube", "year": 1928, "circa": false}, {"id": "B3qgCv4h14A", "title": "Les fogueres de san chuan en Alicante (1929)", "source": "youtube", "year": 1929, "circa": false}, {"id": "CfuKFy-gZ_U", "title": "Elche (1930)", "source": "youtube", "year": 1930, "circa": false}, {"id": "x6BR5nHFcnw", "title": "Inauguración del balneario de Aguas de Busot. Alicante (c. 1935)", "source": "youtube", "year": 1935, "circa": true}, {"id": "skX22ExDpho", "title": "Alacant Fabricació de caretes i equips anti gas (1937)", "source": "youtube", "year": 1937, "circa": false}, {"id": "ym8y99dLe8M", "title": "Elche, la recolección de dátiles (1937)", "source": "youtube", "year": 1937, "circa": false}, {"id": "NCgqDcqynFA", "title": "Inauguración de hospital en Alcoy con presencia del Ministro (1937)", "source": "youtube", "year": 1937, "circa": false}, {"id": "5LK5E4k9WlM", "title": "Alacant Com s´efectua el control alemany de la no intervenció (1938)", "source": "youtube", "year": 1938, "circa": false}, {"id": "6NSpebDZHXM", "title": "En ambos frentes de la Guerra Civil Española. Alicante bombardeado (1938)", "source": "youtube", "year": 1938, "circa": false}, {"id": "cmv_sqdyYwg", "title": "Alicante, Spagna (1939)", "source": "youtube", "year": 1939, "circa": false}, {"id": "9-7ugY_1foQ", "title": "Spagna Alicante (1939)", "source": "youtube", "year": 1939, "circa": false}, {"id": "FXBddl8Dbgo", "title": "Alcoy. Fiestas de moros y cristianos (1943)", "source": "youtube", "year": 1943, "circa": false}, {"id": "akvYYDtDNNE", "title": "Alicante - Hogueras De San Juan (1944 )", "source": "youtube", "year": 1944, "circa": false}, {"id": "mBx-RtWcfDE", "title": "Alicante nombra hijo adoptivo al dictador Franscico Franco. (1944)", "source": "youtube", "year": 1944, "circa": false}, {"id": "6-kZaoGvZwk", "title": "Alicante. la marina española cumple el legado de Juan Sebastian Elcano. (1944)", "source": "youtube", "year": 1944, "circa": false}, {"id": "T30nvSf2Nxw", "title": "Alicante. Fiestas de San Juan (1945)", "source": "youtube", "year": 1945, "circa": false}, {"id": "6DPF5naSfMg", "title": "Alicante. La obra social \"Madre e hijo\" (NOT N 116 B) (1945)", "source": "youtube", "year": 1945, "circa": false}, {"id": "v7yMt1ljKhQ", "title": "Alicante. Un reportaje en la isla de Tabarca (1945)", "source": "youtube", "year": 1945, "circa": false}, {"id": "Awd10m07lAE", "title": "Buzos y peces (en Tabarca) (1945)", "source": "youtube", "year": 1945, "circa": false}, {"id": "ALmVJBkBd2o", "title": "Fabricación de juguetes mecánicos en Ibi (Alicante) (1945)", "source": "youtube", "year": 1945, "circa": false}, {"id": "MrgCS3DPjfQ", "title": "Tiro de pichón. Alicante (1945)", "source": "youtube", "year": 1945, "circa": false}, {"id": "jbTX9IVYbg8", "title": "Alicante. Las fiestas de San Juan (1946)", "source": "youtube", "year": 1946, "circa": false}, {"id": "fgmMGqDp0dA", "title": "Piraguistas del S.E.U. atraviesan el mediterraneo de Alicante a Palma (1946)", "source": "youtube", "year": 1946, "circa": false}, {"id": "E9bSidQlROw", "title": "Historia de una Isla (Tabarca) (1947)", "source": "youtube", "year": 1947, "circa": false}, {"id": "2OsLRM_01oA", "title": "Villena (1947)", "source": "youtube", "year": 1947, "circa": false}, {"id": "2iRdB7rcW1o", "title": "Crevillente Industrial - Antonio Martinez España (1948)", "source": "youtube", "year": 1948, "circa": false}, {"id": "AnyVAJwI0-8", "title": "Panoramas Alicante (1948)", "source": "youtube", "year": 1948, "circa": false}, {"id": "mPQyM55sr-0", "title": "Selección de Biar. Alicante (1949)", "source": "youtube", "year": 1949, "circa": false}, {"id": "WcDggyipUaM", "title": "Alicante. Hogueras de San Juan (1950)", "source": "youtube", "year": 1950, "circa": false}, {"id": "BGWDENpIFD4", "title": "Exhibiciones de juego de pelota en Alicante (1950)", "source": "youtube", "year": 1950, "circa": false}, {"id": "WeL6sePj04A", "title": "Trigo para España. El vapor norteamericano \"Ocean Navigator\" en Alicante. (1951)", "source": "youtube", "year": 1951, "circa": false}, {"id": "S8tVH4ozTJM", "title": "Alicante en fiestas. Las tradicionales Hogueras de San Juan (1952)", "source": "youtube", "year": 1952, "circa": false}, {"id": "09PLGWnpf5c", "title": "In den Huertas (En las Huertas) - Valencia y Elche  (1953)", "source": "youtube", "year": 1953, "circa": false}, {"id": "l6OvNXlTmi4", "title": "Secuencia filmada en el Raval Roig en la película \"El torero\"  (1953)", "source": "youtube", "year": 1953, "circa": false}, {"id": "Xx8R4ARxlsM", "title": "Secuencias filmadas en Alicante de la película \"Das Totenschiff\" (1959)", "source": "youtube", "year": 1959, "circa": false}, {"id": "7ChDNakfdis", "title": "Secuencia filmada en Ciudad de Alicante para la película \"Cartes sur table\" (1966)", "source": "youtube", "year": 1966, "circa": false}, {"id": "XK407VA5Xfg", "title": "Alicante en Blanco y Negro  (Retazos de la Costa Blanca)", "source": "youtube", "year": null, "circa": false}]/*FIN*/;
@@ -173,11 +251,14 @@ const $stats = document.getElementById('stats');
 function miniatura(p){
   if(p.source==='youtube') return `https://i.ytimg.com/vi/${p.id}/hqdefault.jpg`;
   if(p.source==='archive') return `https://archive.org/services/img/${p.id}`;
+  if(p.source==='foto') return p.file;
   return '';
 }
+function esFoto(p){ return p.source==='foto'; }
 function urlExterna(p){
   if(p.source==='youtube') return `https://www.youtube.com/watch?v=${p.id}`;
   if(p.source==='archive') return `https://archive.org/details/${p.id}`;
+  if(p.source==='foto') return p.master || p.file;
   return p.url || '#';
 }
 function urlEmbed(p){
@@ -186,7 +267,8 @@ function urlEmbed(p){
   return null;
 }
 function nombreFuente(p){
-  return p.source==='youtube' ? 'YouTube' : p.source==='archive' ? 'Archive.org' : 'Enlace externo';
+  return p.source==='youtube' ? 'YouTube' : p.source==='archive' ? 'Archive.org'
+       : p.source==='foto' ? 'Fotografía' : 'Enlace externo';
 }
 function limpiarTitulo(t){
   return t.replace(/\(\s*c?\.?\s*\d{4}\s*\)\s*$/,'').trim();
@@ -209,25 +291,58 @@ function reconectar(pantalla){
 }
 
 function ficha(p, i){
-  const puedeEmbed = !!urlEmbed(p);
   const img = miniatura(p);
+  let accion, pie;
+  if(esFoto(p)){
+    accion = `<button class="ampliar" data-i="${i}">⤢ Ampliar</button>`;
+    pie = p.master
+      ? `<a href="${p.master}" rel="noopener">Ver original ↗</a>`
+      : `Fotografía · <a href="${p.file}" rel="noopener">archivo ↗</a>`;
+  } else {
+    accion = urlEmbed(p) ? `<button class="proyectar" data-i="${i}">▶ Proyectar</button>` : '';
+    pie = `<a href="${urlExterna(p)}" rel="noopener">Ver en ${nombreFuente(p)} ↗</a>`;
+  }
   const reposo = `
     ${img?`<img loading="lazy" src="${img}" alt="">`:''}
-    ${puedeEmbed?`<button class="proyectar" data-i="${i}">▶ Proyectar</button>`:''}`;
+    ${accion}`;
   return `
-  <article class="ficha">
+  <article class="ficha${esFoto(p)?' es-foto':''}">
     <div class="pantalla" data-reposo='${reposo.replace(/'/g,"&#39;")}'>${reposo}</div>
     <div class="cuerpo">
-      <span class="ano">${p.year?String(p.year):'S/F'}${p.circa?' <span class="circa">circa</span>':''}</span>
-      <h3 class="titulo">${limpiarTitulo(p.title)}</h3>
-      <span class="fuente"><a href="${urlExterna(p)}" rel="noopener">Ver en ${nombreFuente(p)} ↗</a></span>
+      <span class="ano">${p.year?String(p.year):(p.period||'S/F')}${p.circa?' <span class="circa">circa</span>':''}</span>
+      <h3 class="titulo${p.title?'':' anonima'}">${p.title?limpiarTitulo(p.title):'Sin identificar'}</h3>
+      ${p.description?`<p class="descripcion">${p.description}</p>`:''}
+      <span class="fuente">${pie}</span>
     </div>
   </article>`;
 }
 
+/* ---------- lightbox ---------- */
+const $lb = document.getElementById('lightbox');
+const $lbimg = document.getElementById('lbimg');
+function abrirLightbox(p){
+  $lbimg.src = p.file;
+  $lbimg.alt = limpiarTitulo(p.title);
+  document.getElementById('lbano').textContent = (p.circa?'c. ':'') + (p.year||p.period||'S/F');
+  document.getElementById('lbtitulo').textContent = (p.title?limpiarTitulo(p.title):'Sin identificar') + (p.description?' — '+p.description:'');
+  $lb.classList.add('abierto');
+  document.body.style.overflow='hidden';
+  document.getElementById('lbcerrar').focus();
+}
+function cerrarLightbox(){
+  $lb.classList.remove('abierto');
+  $lbimg.src='';
+  document.body.style.overflow='';
+}
+$lb.addEventListener('click', e=>{ if(e.target.id!=='lbimg') cerrarLightbox(); });
+document.getElementById('lbcerrar').addEventListener('click', cerrarLightbox);
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') cerrarLightbox(); });
+
 function construir(){
-  const datadas = CATALOGO.filter(p=>p.year);
-  const sinFecha = CATALOGO.filter(p=>!p.year);
+  $nav.innerHTML='';
+  const visibles = CATALOGO.filter(p=>!esFoto(p));
+  const datadas = visibles.filter(p=>p.year);
+  const sinFecha = visibles.filter(p=>!p.year);
 
   const decadas = {};
   datadas.forEach(p=>{
@@ -263,12 +378,17 @@ function construir(){
   document.querySelectorAll('.proyectar').forEach(b=>{
     b.addEventListener('click', ()=>proyectar(b, CATALOGO[+b.dataset.i]));
   });
+  document.querySelectorAll('.ampliar').forEach(b=>{
+    b.addEventListener('click', ()=>abrirLightbox(CATALOGO[+b.dataset.i]));
+  });
 
   const anos = datadas.map(p=>p.year);
+  const nFoto = CATALOGO.filter(esFoto).length;
   $stats.innerHTML = `
-    <div><b>${CATALOGO.length}</b>piezas</div>
+    <div><b>${visibles.length}</b>piezas de cine</div>
     <div><b>${Object.keys(decadas).length}</b>décadas</div>
-    <div><b>${Math.min(...anos)}–${Math.max(...anos)}</b>años cubiertos</div>`;
+    ${anos.length?`<div><b>${Math.min(...anos)}–${Math.max(...anos)}</b>años cubiertos</div>`:''}
+    ${nFoto?`<div><b>${nFoto}</b>fotografías <a href="fotos.html" style="font-size:13px">en la Fototeca →</a></div>`:''}`;
 }
 construir();
 </script>

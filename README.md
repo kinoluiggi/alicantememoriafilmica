@@ -2,7 +2,8 @@
 
 **Línea de tiempo de la memoria audiovisual de la provincia de Alicante, 1905–1966.**
 
-🎞️ **Sitio:** https://kinoluiggi.github.io/alicantememoriafilmica/
+🎞️ **Línea de tiempo (cine):** https://kinoluiggi.github.io/alicantememoriafilmica/
+📷 **Fototeca:** https://kinoluiggi.github.io/alicantememoriafilmica/fotos.html
 📺 **Canal:** https://www.youtube.com/@alicantememoriafilmica
 
 Noticiarios, documentales, rodajes de paso y actualidades filmadas en la provincia de Alicante, reunidas y ordenadas **por año de filmación** — no de publicación. De la visita de Alfonso XIII al puerto en 1905 a las cámaras extranjeras de los años sesenta, pasando por la Guerra Civil, las Hogueras de San Juan, la huerta, la fábrica y la costa.
@@ -15,6 +16,8 @@ El sitio es una sola página estática (`index.html`) con el catálogo embebido.
 
 - **`fuentes.json`** — centro de control del catálogo. En `"youtube"` van canales o playlists completas; en `"manual"` se agregan piezas sueltas: videos de YouTube de otros canales, ítems de Archive.org (`"source": "archive"`) o enlaces externos sin embed (`"source": "link"`).
 - **`actualizar_catalogo.py`** — barre todas las fuentes con [yt-dlp](https://github.com/yt-dlp/yt-dlp), detecta el año de filmación en los títulos (soporta `(1928)`, `(c. 1935)` y años sueltos), deduplica, genera `catalog.json` y lo re-embebe en `index.html`.
+- **`fotos/`** — la fototeca: fotografías, postales y grabados en carpetas por década (`fotos/1920s/`) o por periodo (`fotos/1500-1700/`). El año se lee del nombre del archivo (`1926_paseo.jpg`, `c1929_puerto.jpg`) o, en su defecto, de la carpeta. Se muestran en `fotos.html` en modo mosaico o proyección.
+- **`fotos_meta.json`** — metadatos curados de fotos (títulos, dataciones, descripciones); solo las entradas con `"aprobado": true` entran al catálogo. Se generan propuestas con `describir_fotos.py` (visión por IA) y se revisan a mano.
 - **`.github/workflows/actualizar.yml`** — cron semanal (lunes) que corre el script y publica los cambios solo si hay piezas nuevas.
 
 ### Actualizar a mano
