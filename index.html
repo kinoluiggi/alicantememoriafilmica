@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alicante, Memoria Fílmica — Línea de tiempo 1905–1966</title>
+<meta name="description" content="La memoria fílmica de Alicante ordenada cronológicamente: noticiarios, documentales y rodajes en la provincia, 1905–1966.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cal:#F2EADA;        /* muro encalado / mármol crema */
+  --piedra:#E9DEC7;     /* ficha */
+  --tinta:#1C3947;      /* azul marino tinta */
+  --mar:#33708C;
+  --almagra:#A93A28;    /* rojo Explanada / hogueras */
+  --marmol:#25201A;     /* mármol negro */
+  --arena:#94815F;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  background:var(--cal);
+  color:var(--tinta);
+  font-family:'Newsreader',Georgia,serif;
+  line-height:1.55;
+}
+::selection{background:var(--almagra);color:var(--cal)}
+a{color:var(--mar)}
+
+/* ---------- onda de la Explanada ---------- */
+.onda{
+  height:26px;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='26' viewBox='0 0 140 26'><path d='M0 6 Q35 -4 70 6 T140 6 V13 Q105 3 70 13 T0 13 Z' fill='%23A93A28'/><path d='M0 13 Q35 3 70 13 T140 13 V20 Q105 10 70 20 T0 20 Z' fill='%23F2EADA'/><path d='M0 20 Q35 10 70 20 T140 20 V27 Q105 17 70 27 T0 27 Z' fill='%2325201A'/></svg>");
+  background-repeat:repeat-x;
+  background-size:140px 26px;
+}
+
+/* ---------- cabecera ---------- */
+header{max-width:1080px;margin:0 auto;padding:64px 24px 40px}
+.sobre{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:12px;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--almagra);margin-bottom:16px;
+}
+h1{
+  font-family:'Fraunces',serif;
+  font-optical-sizing:auto;font-weight:900;
+  font-size:clamp(44px,8vw,100px);
+  line-height:.94;text-transform:uppercase;letter-spacing:.005em;
+}
+h1 em{font-style:normal;color:var(--almagra)}
+.sub-onda{margin:26px 0 26px;max-width:520px}
+.intro{max-width:58ch;font-size:18px;color:#3E5563}
+.intro strong{color:var(--tinta)}
+.stats{
+  display:flex;gap:32px;flex-wrap:wrap;margin-top:30px;
+  font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--arena);
+}
+.stats b{
+  display:block;font-family:'Fraunces',serif;font-weight:600;
+  font-size:32px;color:var(--tinta);line-height:1.1;
+}
+
+/* ---------- navegación de décadas ---------- */
+nav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(242,234,218,.92);backdrop-filter:blur(6px);
+  border-top:1px solid #D8CCAF;border-bottom:1px solid #D8CCAF;
+}
+nav .fila{
+  max-width:1080px;margin:0 auto;padding:10px 24px;
+  display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;
+}
+nav .fila::-webkit-scrollbar{display:none}
+nav a{
+  font-family:'IBM Plex Mono',monospace;font-size:13px;
+  text-decoration:none;color:var(--tinta);
+  padding:5px 13px;border:1px solid #CBBE9D;border-radius:999px;
+  white-space:nowrap;transition:background .15s,color .15s;
+}
+nav a:hover,nav a:focus-visible{background:var(--tinta);color:var(--cal);outline:none}
+
+/* ---------- décadas ---------- */
+main{max-width:1080px;margin:0 auto;padding:12px 24px 80px}
+section{padding-top:56px;scroll-margin-top:70px}
+.decada-cab{display:flex;align-items:baseline;gap:18px;margin-bottom:8px}
+.decada-cab h2{
+  font-family:'Fraunces',serif;font-weight:900;
+  font-size:clamp(34px,5vw,58px);letter-spacing:.01em;
+}
+.decada-cab .cuenta{
+  font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--arena);
+}
+section .onda{margin-bottom:28px}
+
+/* ---------- fichas ---------- */
+.rejilla{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.ficha{
+  background:var(--piedra);
+  border:1px solid #D3C5A2;border-radius:3px;
+  display:flex;flex-direction:column;overflow:hidden;
+}
+.pantalla{position:relative;aspect-ratio:16/9;background:var(--marmol)}
+.pantalla img{
+  width:100%;height:100%;object-fit:cover;display:block;
+  filter:grayscale(1) sepia(.28) contrast(1.05) brightness(.96);
+  transition:filter .25s;
+}
+.ficha:hover .pantalla img{filter:grayscale(.4) sepia(.15) contrast(1.03)}
+.pantalla iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.proyectar{
+  position:absolute;inset:0;width:100%;height:100%;
+  background:none;border:0;cursor:pointer;
+  display:flex;align-items:flex-end;justify-content:flex-start;
+  font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;
+  color:var(--cal);padding:10px 12px;text-transform:uppercase;
+  text-shadow:0 1px 4px rgba(0,0,0,.7);
+}
+.proyectar:focus-visible{outline:3px solid var(--almagra);outline-offset:-3px}
+.cuerpo{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.ano{
+  font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;
+  color:var(--almagra);
+}
+.ano .circa{color:var(--arena)}
+.titulo{
+  font-size:18px;font-weight:500;line-height:1.3;flex:1;
+}
+.fuente{
+  font-family:'IBM Plex Mono',monospace;font-size:11.5px;
+}
+.fuente a{color:var(--mar);text-decoration-color:rgba(51,112,140,.4)}
+
+/* ---------- pie ---------- */
+footer{border-top:1px solid #D8CCAF;padding:36px 24px 60px}
+footer .caja{max-width:1080px;margin:0 auto;font-size:15px;color:#4A6170}
+footer .caja p+p{margin-top:8px}
+footer .mono{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;color:var(--arena);text-transform:uppercase;margin-bottom:14px}
+</style>
+</head>
+<body>
+
+<header>
+  <p class="sobre">Canal de archivo · Provincia de Alicante · 1905–1966</p>
+  <h1>Alicante,<br><em>memoria fílmica</em></h1>
+  <div class="onda sub-onda" aria-hidden="true"></div>
+  <p class="intro">Noticiarios, documentales, rodajes de paso y actualidades filmadas en la provincia de Alicante, reunidas y ordenadas <strong>por año de filmación</strong> — no de publicación. De la visita de Alfonso XIII al puerto en 1905 a las cámaras extranjeras de los años sesenta, pasando por la guerra, las Hogueras y el trabajo de la huerta y la fábrica.</p>
+  <div class="stats" id="stats"></div>
+</header>
+
+<nav aria-label="Décadas"><div class="fila" id="navdec"></div></nav>
+
+<main id="linea"></main>
+
+<footer>
+  <div class="caja">
+    <p class="mono">▲■● Alicante Memoria Fílmica</p>
+    <p>Proyecto de recuperación de la memoria audiovisual alicantina iniciado en 2020. Las piezas se reproducen desde sus fuentes originales; los derechos pertenecen a sus titulares y los materiales se reúnen aquí con fines de documentación y divulgación.</p>
+    <p>Canal: <a href="https://www.youtube.com/@alicantememoriafilmica" rel="noopener">youtube.com/@alicantememoriafilmica</a> · Un proyecto hermano de <a href="https://www.naranjasdehiroshima.com" rel="noopener">Naranjas de Hiroshima</a>.</p>
+  </div>
+</footer>
+
+<script>
+const CATALOGO = /*CATALOGO*/[{"id": "0CMqB7u8Vcg", "title": "Alfonso XIII en Alicante (1905)", "source": "youtube", "year": 1905, "circa": false}, {"id": "lwDk_i3CRRk", "title": "El paseo de Alicante en 1926 (1926)", "source": "youtube", "year": 1926, "circa": false}, {"id": "_xkGfmWoO34", "title": "Alicante. Construcción del ferrocarril en Tibi, Venta de Llémena y Castalla (1928)", "source": "youtube", "year": 1928, "circa": false}, {"id": "B3qgCv4h14A", "title": "Les fogueres de san chuan en Alicante (1929)", "source": "youtube", "year": 1929, "circa": false}, {"id": "CfuKFy-gZ_U", "title": "Elche (1930)", "source": "youtube", "year": 1930, "circa": false}, {"id": "x6BR5nHFcnw", "title": "Inauguración del balneario de Aguas de Busot. Alicante (c. 1935)", "source": "youtube", "year": 1935, "circa": true}, {"id": "skX22ExDpho", "title": "Alacant Fabricació de caretes i equips anti gas (1937)", "source": "youtube", "year": 1937, "circa": false}, {"id": "ym8y99dLe8M", "title": "Elche, la recolección de dátiles (1937)", "source": "youtube", "year": 1937, "circa": false}, {"id": "NCgqDcqynFA", "title": "Inauguración de hospital en Alcoy con presencia del Ministro (1937)", "source": "youtube", "year": 1937, "circa": false}, {"id": "5LK5E4k9WlM", "title": "Alacant Com s´efectua el control alemany de la no intervenció (1938)", "source": "youtube", "year": 1938, "circa": false}, {"id": "6NSpebDZHXM", "title": "En ambos frentes de la Guerra Civil Española. Alicante bombardeado (1938)", "source": "youtube", "year": 1938, "circa": false}, {"id": "cmv_sqdyYwg", "title": "Alicante, Spagna (1939)", "source": "youtube", "year": 1939, "circa": false}, {"id": "9-7ugY_1foQ", "title": "Spagna Alicante (1939)", "source": "youtube", "year": 1939, "circa": false}, {"id": "FXBddl8Dbgo", "title": "Alcoy. Fiestas de moros y cristianos (1943)", "source": "youtube", "year": 1943, "circa": false}, {"id": "akvYYDtDNNE", "title": "Alicante - Hogueras De San Juan (1944 )", "source": "youtube", "year": 1944, "circa": false}, {"id": "mBx-RtWcfDE", "title": "Alicante nombra hijo adoptivo al dictador Franscico Franco. (1944)", "source": "youtube", "year": 1944, "circa": false}, {"id": "6-kZaoGvZwk", "title": "Alicante. la marina española cumple el legado de Juan Sebastian Elcano. (1944)", "source": "youtube", "year": 1944, "circa": false}, {"id": "T30nvSf2Nxw", "title": "Alicante. Fiestas de San Juan (1945)", "source": "youtube", "year": 1945, "circa": false}, {"id": "6DPF5naSfMg", "title": "Alicante. La obra social \"Madre e hijo\" (NOT N 116 B) (1945)", "source": "youtube", "year": 1945, "circa": false}, {"id": "v7yMt1ljKhQ", "title": "Alicante. Un reportaje en la isla de Tabarca (1945)", "source": "youtube", "year": 1945, "circa": false}, {"id": "Awd10m07lAE", "title": "Buzos y peces (en Tabarca) (1945)", "source": "youtube", "year": 1945, "circa": false}, {"id": "ALmVJBkBd2o", "title": "Fabricación de juguetes mecánicos en Ibi (Alicante) (1945)", "source": "youtube", "year": 1945, "circa": false}, {"id": "MrgCS3DPjfQ", "title": "Tiro de pichón. Alicante (1945)", "source": "youtube", "year": 1945, "circa": false}, {"id": "jbTX9IVYbg8", "title": "Alicante. Las fiestas de San Juan (1946)", "source": "youtube", "year": 1946, "circa": false}, {"id": "fgmMGqDp0dA", "title": "Piraguistas del S.E.U. atraviesan el mediterraneo de Alicante a Palma (1946)", "source": "youtube", "year": 1946, "circa": false}, {"id": "E9bSidQlROw", "title": "Historia de una Isla (Tabarca) (1947)", "source": "youtube", "year": 1947, "circa": false}, {"id": "2OsLRM_01oA", "title": "Villena (1947)", "source": "youtube", "year": 1947, "circa": false}, {"id": "2iRdB7rcW1o", "title": "Crevillente Industrial - Antonio Martinez España (1948)", "source": "youtube", "year": 1948, "circa": false}, {"id": "AnyVAJwI0-8", "title": "Panoramas Alicante (1948)", "source": "youtube", "year": 1948, "circa": false}, {"id": "mPQyM55sr-0", "title": "Selección de Biar. Alicante (1949)", "source": "youtube", "year": 1949, "circa": false}, {"id": "WcDggyipUaM", "title": "Alicante. Hogueras de San Juan (1950)", "source": "youtube", "year": 1950, "circa": false}, {"id": "BGWDENpIFD4", "title": "Exhibiciones de juego de pelota en Alicante (1950)", "source": "youtube", "year": 1950, "circa": false}, {"id": "WeL6sePj04A", "title": "Trigo para España. El vapor norteamericano \"Ocean Navigator\" en Alicante. (1951)", "source": "youtube", "year": 1951, "circa": false}, {"id": "S8tVH4ozTJM", "title": "Alicante en fiestas. Las tradicionales Hogueras de San Juan (1952)", "source": "youtube", "year": 1952, "circa": false}, {"id": "09PLGWnpf5c", "title": "In den Huertas (En las Huertas) - Valencia y Elche  (1953)", "source": "youtube", "year": 1953, "circa": false}, {"id": "l6OvNXlTmi4", "title": "Secuencia filmada en el Raval Roig en la película \"El torero\"  (1953)", "source": "youtube", "year": 1953, "circa": false}, {"id": "Xx8R4ARxlsM", "title": "Secuencias filmadas en Alicante de la película \"Das Totenschiff\" (1959)", "source": "youtube", "year": 1959, "circa": false}, {"id": "7ChDNakfdis", "title": "Secuencia filmada en Ciudad de Alicante para la película \"Cartes sur table\" (1966)", "source": "youtube", "year": 1966, "circa": false}, {"id": "XK407VA5Xfg", "title": "Alicante en Blanco y Negro  (Retazos de la Costa Blanca)", "source": "youtube", "year": null, "circa": false}]/*FIN*/;
+
+const $linea = document.getElementById('linea');
+const $nav = document.getElementById('navdec');
+const $stats = document.getElementById('stats');
+
+function miniatura(p){
+  if(p.source==='youtube') return `https://i.ytimg.com/vi/${p.id}/hqdefault.jpg`;
+  if(p.source==='archive') return `https://archive.org/services/img/${p.id}`;
+  return '';
+}
+function urlExterna(p){
+  if(p.source==='youtube') return `https://www.youtube.com/watch?v=${p.id}`;
+  if(p.source==='archive') return `https://archive.org/details/${p.id}`;
+  return p.url || '#';
+}
+function urlEmbed(p){
+  if(p.source==='youtube') return `https://www.youtube-nocookie.com/embed/${p.id}?autoplay=1&rel=0`;
+  if(p.source==='archive') return `https://archive.org/embed/${p.id}?autoplay=1`;
+  return null;
+}
+function nombreFuente(p){
+  return p.source==='youtube' ? 'YouTube' : p.source==='archive' ? 'Archive.org' : 'Enlace externo';
+}
+function limpiarTitulo(t){
+  return t.replace(/\(\s*c?\.?\s*\d{4}\s*\)\s*$/,'').trim();
+}
+
+function proyectar(boton, p){
+  // detener cualquier otra proyección
+  document.querySelectorAll('.pantalla iframe').forEach(f=>{
+    const pa=f.closest('.pantalla');
+    pa.innerHTML = pa.dataset.reposo;
+    reconectar(pa);
+  });
+  const pantalla = boton.closest('.pantalla');
+  const src = urlEmbed(p);
+  pantalla.innerHTML = `<iframe src="${src}" title="${p.title.replace(/"/g,'&quot;')}" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>`;
+}
+function reconectar(pantalla){
+  const b = pantalla.querySelector('.proyectar');
+  if(b) b.addEventListener('click', ()=>proyectar(b, CATALOGO[+b.dataset.i]));
+}
+
+function ficha(p, i){
+  const puedeEmbed = !!urlEmbed(p);
+  const img = miniatura(p);
+  const reposo = `
+    ${img?`<img loading="lazy" src="${img}" alt="">`:''}
+    ${puedeEmbed?`<button class="proyectar" data-i="${i}">▶ Proyectar</button>`:''}`;
+  return `
+  <article class="ficha">
+    <div class="pantalla" data-reposo='${reposo.replace(/'/g,"&#39;")}'>${reposo}</div>
+    <div class="cuerpo">
+      <span class="ano">${p.year?String(p.year):'S/F'}${p.circa?' <span class="circa">circa</span>':''}</span>
+      <h3 class="titulo">${limpiarTitulo(p.title)}</h3>
+      <span class="fuente"><a href="${urlExterna(p)}" rel="noopener">Ver en ${nombreFuente(p)} ↗</a></span>
+    </div>
+  </article>`;
+}
+
+function construir(){
+  const datadas = CATALOGO.filter(p=>p.year);
+  const sinFecha = CATALOGO.filter(p=>!p.year);
+
+  const decadas = {};
+  datadas.forEach(p=>{
+    const d = Math.floor(p.year/10)*10;
+    (decadas[d] = decadas[d]||[]).push(p);
+  });
+
+  let html = '';
+  Object.keys(decadas).sort((a,b)=>a-b).forEach(d=>{
+    const grupo = decadas[d].sort((a,b)=>a.year-b.year||a.title.localeCompare(b.title));
+    html += `
+    <section id="d${d}">
+      <div class="decada-cab"><h2>Años ${d}</h2>
+      <span class="cuenta">${grupo.length} pieza${grupo.length===1?'':'s'}</span></div>
+      <div class="onda" aria-hidden="true"></div>
+      <div class="rejilla">${grupo.map(p=>ficha(p, CATALOGO.indexOf(p))).join('')}</div>
+    </section>`;
+    $nav.insertAdjacentHTML('beforeend', `<a href="#d${d}">${d}s</a>`);
+  });
+
+  if(sinFecha.length){
+    html += `
+    <section id="sinfecha">
+      <div class="decada-cab"><h2>Sin datar</h2>
+      <span class="cuenta">${sinFecha.length} pieza${sinFecha.length===1?'':'s'}</span></div>
+      <div class="onda" aria-hidden="true"></div>
+      <div class="rejilla">${sinFecha.map(p=>ficha(p, CATALOGO.indexOf(p))).join('')}</div>
+    </section>`;
+    $nav.insertAdjacentHTML('beforeend', `<a href="#sinfecha">S/F</a>`);
+  }
+
+  $linea.innerHTML = html;
+  document.querySelectorAll('.proyectar').forEach(b=>{
+    b.addEventListener('click', ()=>proyectar(b, CATALOGO[+b.dataset.i]));
+  });
+
+  const anos = datadas.map(p=>p.year);
+  $stats.innerHTML = `
+    <div><b>${CATALOGO.length}</b>piezas</div>
+    <div><b>${Object.keys(decadas).length}</b>décadas</div>
+    <div><b>${Math.min(...anos)}–${Math.max(...anos)}</b>años cubiertos</div>`;
+}
+construir();
+</script>
+</body>
+</html>

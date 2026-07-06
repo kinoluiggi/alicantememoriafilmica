@@ -1,0 +1,23 @@
+{
+  "youtube": [
+    "https://www.youtube.com/@alicantememoriafilmica/videos"
+  ],
+  "manual": [
+    {
+      "activo": false,
+      "source": "archive",
+      "id": "identificador-en-archive-org",
+      "title": "Ejemplo Archive.org (1932)",
+      "year": 1932,
+      "circa": false
+    },
+    {
+      "activo": false,
+      "source": "link",
+      "url": "https://ejemplo.org/pieza",
+      "title": "Ejemplo enlace externo (1941)",
+      "year": 1941,
+      "circa": false
+    }
+  ]
+}
