@@ -1,0 +1,13 @@
+Banda sonora de la proyección (modo slider de la Fototeca).
+
+Suelta aquí tus MP3 (también .ogg o .m4a). El nombre del archivo
+se convierte en el título de la pista:
+
+  01_habanera_del_puerto.mp3   ->  "01 habanera del puerto"
+
+Las pistas se encadenan en bucle; el visitante puede silenciarlas
+con el botón "♫ Música". Usa música propia o con derechos limpios
+(tus piezas de Suno funcionan perfecto).
+
+Tras subir o cambiar pistas, corre el workflow de Actions para que
+la proyección las descubra. Este LEEME.txt puede borrarse.

@@ -140,6 +140,23 @@ def barrer_fotos():
                     p[campo] = m[campo]
     return piezas
 
+EXT_MUSICA = {".mp3", ".ogg", ".m4a"}
+
+def barrer_musica():
+    """Barre la carpeta musica/ para la banda sonora de la proyección."""
+    base = os.path.join(AQUI, "musica")
+    if not os.path.isdir(base):
+        return []
+    pistas = []
+    for a in sorted(os.listdir(base)):
+        nombre, ext = os.path.splitext(a)
+        if ext.lower() not in EXT_MUSICA:
+            continue
+        titulo = nombre.replace("_", " ").replace("-", " – ").strip()
+        pistas.append({"file": f"musica/{a}", "title": titulo})
+    return pistas
+
+
 def main():
     with open(FUENTES, encoding="utf-8") as f:
         fuentes = json.load(f)
@@ -188,6 +205,10 @@ def main():
     with open(SALIDA, "w", encoding="utf-8") as f:
         json.dump(unicos, f, ensure_ascii=False, indent=1)
 
+    musica = barrer_musica()
+    if musica:
+        print(f"→ banda sonora: {len(musica)} pistas")
+
     # re-embeber en las páginas que llevan el catálogo dentro
     for pagina in ("index.html", "fotos.html"):
         ruta = os.path.join(AQUI, pagina)
@@ -200,6 +221,12 @@ def main():
             "/*CATALOGO*/" + json.dumps(unicos, ensure_ascii=False) + "/*FIN*/",
             html, flags=re.S,
         )
+        if pagina == "fotos.html":
+            nuevo = re.sub(
+                r"/\*MUSICA\*/.*?/\*FIN_MUSICA\*/",
+                "/*MUSICA*/" + json.dumps(musica, ensure_ascii=False) + "/*FIN_MUSICA*/",
+                nuevo, flags=re.S,
+            )
         with open(ruta, "w", encoding="utf-8") as f:
             f.write(nuevo)
         print(f"✓ catálogo re-embebido en {pagina}")
