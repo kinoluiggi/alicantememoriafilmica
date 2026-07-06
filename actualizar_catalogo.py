@@ -14,6 +14,7 @@ import os
 import re
 import subprocess
 import sys
+import unicodedata
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 FUENTES = os.path.join(AQUI, "fuentes.json")
@@ -152,7 +153,12 @@ def barrer_musica():
         nombre, ext = os.path.splitext(a)
         if ext.lower() not in EXT_MUSICA:
             continue
-        titulo = nombre.replace("_", " ").replace("-", " – ").strip()
+        titulo = unicodedata.normalize("NFC", nombre)
+        titulo = re.sub(r"^\d+\s+", "", titulo)          # número de pista
+        titulo = re.sub(r"\(cover\)", "", titulo, flags=re.I)
+        titulo = re.sub(r"\s+\d{2}$", "", titulo)         # número de toma
+        titulo = titulo.replace("_ ", ": ").replace("_", " ")
+        titulo = re.sub(r"\s+", " ", titulo).strip(" ,.-")
         pistas.append({"file": f"musica/{a}", "title": titulo})
     return pistas
 

@@ -8,6 +8,13 @@
  },
  {
   "source": "foto",
+  "file": "fotos/1500-1700/En su conjunto el arrabal de San Francisco contaba contaba en 1757 con 659 casas el 23_ del total urbano que suponían el segundo valor patrimonial edificado en 1754 estaba ya ocupado por 2.375 habitantes el 21_ del total de la ciudad .jpg",
+  "title": "En su conjunto el arrabal de San Francisco contaba contaba en con 659 casas el 23_ del total urbano que suponían el segu",
+  "year": 1757,
+  "circa": false
+ },
+ {
+  "source": "foto",
   "file": "fotos/1800s/bahia_de_alicante_aprox_1788_a_1790.jpg",
   "title": "𝐁𝐀𝐇𝐈́𝐀 𝐃𝐄 𝐀𝐋𝐈𝐂𝐀𝐍𝐓𝐄, 𝐚𝐩𝐫𝐨𝐱‧ 𝟏𝟕𝟖𝟖 𝐚 𝟏𝟕𝟗𝟎 𝐀𝐥𝐞𝐱𝐚𝐧𝐝𝐫𝐞 𝐉𝐞𝐚𝐧 𝐍𝐨ë𝐥",
   "year": 1788,
@@ -22,11 +29,26 @@
  },
  {
   "source": "foto",
+  "file": "fotos/1500-1700/SAUCES EN EL PASEO DEL ENLOSADO ALICANTE, 1790.jpg",
+  "title": "SAUCES EN EL PASEO DEL ENLOSADO ALICANTE",
+  "year": 1790,
+  "circa": false
+ },
+ {
+  "source": "foto",
   "file": "fotos/1500-1700/1795_vista_de_la_huerta_de_alicante_tomada.jpg",
   "title": "Vista de la Huerta de Alicante tomada de la Torre de Aigües",
   "year": 1795,
   "circa": true,
   "description": "Grabado publicado entre y . Diario Información - Un Siglo en Imágenes Archivo Municipal de Alicante"
+ },
+ {
+  "source": "foto",
+  "file": "fotos/1500-1700/Vista de la Huerta de Alicante tomada de la Torre de Aigües. Grabado publicado entre 1795 y 1797 . Diario Información - Un Siglo en Imágenes Archivo Municipal de Alicante.jpg",
+  "title": "Vista de la Huerta de Alicante tomada de la Torre de Aigües",
+  "year": 1795,
+  "circa": true,
+  "description": "Grabado publicado entre 1795 y 1797 . Diario Información - Un Siglo en Imágenes Archivo Municipal de Alicante"
  },
  {
   "source": "foto",
@@ -1502,6 +1524,54 @@
  },
  {
   "source": "foto",
+  "file": "fotos/1500-1700/186513774_3894523837334404_5474120310305970547_n.jpg",
+  "title": "",
+  "year": null,
+  "circa": false,
+  "period": "1500–1700"
+ },
+ {
+  "source": "foto",
+  "file": "fotos/1500-1700/272878109_1856839931373342_1395316751431072555_n.jpg",
+  "title": "",
+  "year": null,
+  "circa": false,
+  "period": "1500–1700"
+ },
+ {
+  "source": "foto",
+  "file": "fotos/1500-1700/305497491_1835353673462452_7053724411823592692_n.jpg",
+  "title": "",
+  "year": null,
+  "circa": false,
+  "period": "1500–1700"
+ },
+ {
+  "source": "foto",
+  "file": "fotos/1500-1700/306185083_1835354133462406_4143654439909459198_n.jpg",
+  "title": "",
+  "year": null,
+  "circa": false,
+  "period": "1500–1700"
+ },
+ {
+  "source": "foto",
+  "file": "fotos/1500-1700/306276535_1835352686795884_7726379987769834617_n.jpg",
+  "title": "",
+  "year": null,
+  "circa": false,
+  "period": "1500–1700"
+ },
+ {
+  "source": "foto",
+  "file": "fotos/1500-1700/366831021_1484647409024181_6235211513405454415_n.jpg",
+  "title": "",
+  "year": null,
+  "circa": false,
+  "period": "1500–1700"
+ },
+ {
+  "source": "foto",
   "file": "fotos/1500-1700/fb_186513774.jpg",
   "title": "",
   "year": null,
@@ -1554,6 +1624,14 @@
   "source": "youtube",
   "year": null,
   "circa": false
+ },
+ {
+  "source": "foto",
+  "file": "fotos/1500-1700/EL PUERTO DURANTE LOS SIGLOS XV AL XVIII.jpg",
+  "title": "EL PUERTO DURANTE LOS SIGLOS XV AL XVIII",
+  "year": null,
+  "circa": false,
+  "period": "1500–1700"
  },
  {
   "source": "foto",
