@@ -1,23 +1,351 @@
 {
-  "youtube": [
-    "https://www.youtube.com/@alicantememoriafilmica/videos"
-  ],
-  "manual": [
-    {
-      "activo": false,
-      "source": "archive",
-      "id": "identificador-en-archive-org",
-      "title": "Ejemplo Archive.org (1932)",
-      "year": 1932,
-      "circa": false
-    },
-    {
-      "activo": false,
-      "source": "link",
-      "url": "https://ejemplo.org/pieza",
-      "title": "Ejemplo enlace externo (1941)",
-      "year": 1941,
-      "circa": false
-    }
-  ]
+ "youtube": [
+  "https://www.youtube.com/@alicantememoriafilmica/videos"
+ ],
+ "manual": [
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "bwjyDx0BwNQ",
+   "title": "Playa de San Juan, Alicante",
+   "year": 1960,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "XS0eteT_hPo",
+   "title": "Navidad en las playas de Alicante",
+   "year": 1974,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "W7qm5dRzFkI",
+   "title": "La playa de Alicante",
+   "year": 1973,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "OHXiPx4D9rQ",
+   "title": "San Juan, Alicante, en otros tiempos",
+   "year": 1965,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "uZN7S66SLbM",
+   "title": "Alicante antiguo en tarjetas postales",
+   "year": 1910,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "1G51p21ZPBw",
+   "title": "El centro de Alicante en otros tiempos",
+   "year": 1969,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "QGWijUuMzKM",
+   "title": "Flores de almendro en Alicante",
+   "year": 1966,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "A-yR_ephcts",
+   "title": "Excursiones por Alicante",
+   "year": 1962,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "13xmPeRbGhc",
+   "title": "Urbanización de la Playa de San Juan, Alicante",
+   "year": 1965,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "LSCG9sYLHr0",
+   "title": "A la Playa de San Juan, Alicante",
+   "year": 1964,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "GIFKkk9unXk",
+   "title": "Vacaciones en Alicante y Benidorm",
+   "year": 1983,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "YUxsDQzWe60",
+   "title": "Husein Rofé en Alicante",
+   "year": 1969,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "Zivj_b4YvYo",
+   "title": "La Albufera, Alicante",
+   "year": 1965,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "ZUJZgwVaMqU",
+   "title": "El mercado de Alicante en el pasado",
+   "year": 1965,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "4LV3HKwesbw",
+   "title": "Alicante y Benidorm",
+   "year": 1961,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "Jmz40TNFGDE",
+   "title": "Playa de San Juan, Alicante — Apartamentos Flamingo",
+   "year": 1964,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "YOx2xvqPpzw",
+   "title": "El Campello y la Coveta Fumà en Navidad, Alicante",
+   "year": 1970,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "YY8XarnZV5Y",
+   "title": "Alicante y Santa Pola",
+   "year": 1965,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "Mp5jKBPfwqQ",
+   "title": "La Albufera de Alicante en otros tiempos",
+   "year": 1965,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "5eDaMFpClCw",
+   "title": "Vacaciones en la Playa de San Juan, Alicante",
+   "year": 1982,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "OeQ2CfY5k0A",
+   "title": "Colonia Santa Isabel, Alicante",
+   "year": 1965,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "bhNNjgiLbaM",
+   "title": "Los gatos callejeros de Alicante",
+   "year": 1966,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "6sTNexjKaCk",
+   "title": "Alicante y Benidorm antiguos",
+   "year": 1910,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "B1Px6pSGzrY",
+   "title": "Navidad nevada en Alicante",
+   "year": 1970,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "A8cmTV7MQGU",
+   "title": "Colonia Santa Isabel, Alicante (2)",
+   "year": 1965,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "6EsHwg2bNwM",
+   "title": "Los Reyes Magos en Alicante",
+   "year": 1970,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "9hQgjQVJ8Qc",
+   "title": "Windsurf en Alicante",
+   "year": 1983,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "9wtBMYP4Sqo",
+   "title": "Guadalest y Benidorm, Alicante",
+   "year": 1966,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "MjLH6B3vgdk",
+   "title": "Visitando Benidorm, Alicante",
+   "year": 1962,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "r2ZyoUvLji0",
+   "title": "Las subastas y el palmeral de Elche, Alicante",
+   "year": 1933,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "ABcEivqW7WA",
+   "title": "La Costa Blanca: Alicante, Calpe, Benidorm y el Peñón de Ifach",
+   "year": 1958,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "Q8w0f-c0y0Y",
+   "title": "Castillos de Alicante — Santa Bárbara, Sax, Biar y Villena",
+   "year": 1974,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "eY3gQfv6faY",
+   "title": "Los juguetes de Ibi, Alicante",
+   "year": 1978,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "Gma2AzQiUTA",
+   "title": "Moros y Cristianos de Villajoyosa, Alicante",
+   "year": 1979,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "xyywDo1MEAo",
+   "title": "Las playas de Benidorm en invierno, Alicante",
+   "year": 1974,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "79rIod0iDJk",
+   "title": "Justas y torneos medievales en el Castillo de Jijona, Alicante",
+   "year": 1977,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "mjzs8mu9Tng",
+   "title": "Ala delta en el Peñón de Ifach, Calpe, Alicante",
+   "year": 1976,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "jNkdcX0xplM",
+   "title": "Las salinas de Santa Pola, Alicante — cómo se obtiene la sal del mar",
+   "year": 1974,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "4X0JorC7iD0",
+   "title": "La ciudad de Elche — Huerto del Cura y el Palmeral, Alicante",
+   "year": 1977,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "C7aTtOREx04",
+   "title": "Festival de Habaneras de Torrevieja, Alicante",
+   "year": 1979,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "Ro_RFn5u0gw",
+   "title": "Turismo en Benidorm — el Trenet Limón Express y Finestrat, Alicante",
+   "year": 1974,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "t9ODNTU_Hbg",
+   "title": "Benidorm en invierno — regatas y Trofeo Príncipe, Alicante",
+   "year": 1978,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "mUlQMEbUcyQ",
+   "title": "Parasailing en Benidorm, Alicante",
+   "year": 1977,
+   "circa": false
+  }
+ ]
 }
