@@ -2118,9 +2118,25 @@
   "circa": false
  },
  {
+  "activo": true,
+  "source": "youtube",
+  "id": "uZN7S66SLbM",
+  "title": "Alicante antiguo en tarjetas postales",
+  "year": 1910,
+  "circa": false
+ },
+ {
   "source": "foto",
   "file": "fotos/1910s/1910_alicante_el_parque_de_canalejas_en.jpg",
   "title": "Alicante el parque de canalejas en",
+  "year": 1910,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "6sTNexjKaCk",
+  "title": "Alicante y Benidorm antiguos",
   "year": 1910,
   "circa": false
  },
@@ -2618,6 +2634,14 @@
   "source": "foto",
   "file": "fotos/1930s/1933_font_de_llevant_mayo.jpg",
   "title": "Font de llevant mayo",
+  "year": 1933,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "r2ZyoUvLji0",
+  "title": "Las subastas y el palmeral de Elche, Alicante",
   "year": 1933,
   "circa": false
  },
@@ -3434,6 +3458,14 @@
   "circa": false
  },
  {
+  "activo": true,
+  "source": "youtube",
+  "id": "ABcEivqW7WA",
+  "title": "La Costa Blanca: Alicante, Calpe, Benidorm y el Peñón de Ifach",
+  "year": 1958,
+  "circa": false
+ },
+ {
   "source": "foto",
   "file": "fotos/1950s/1959_cine_ideal_con_el_jorobado_de_jean.jpg",
   "title": "Cine ideal con el jorobado de jean",
@@ -3448,10 +3480,162 @@
   "circa": false
  },
  {
+  "activo": true,
+  "source": "youtube",
+  "id": "bwjyDx0BwNQ",
+  "title": "Playa de San Juan, Alicante",
+  "year": 1960,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "4LV3HKwesbw",
+  "title": "Alicante y Benidorm",
+  "year": 1961,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "A-yR_ephcts",
+  "title": "Excursiones por Alicante",
+  "year": 1962,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "MjLH6B3vgdk",
+  "title": "Visitando Benidorm, Alicante",
+  "year": 1962,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "LSCG9sYLHr0",
+  "title": "A la Playa de San Juan, Alicante",
+  "year": 1964,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "Jmz40TNFGDE",
+  "title": "Playa de San Juan, Alicante — Apartamentos Flamingo",
+  "year": 1964,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "YY8XarnZV5Y",
+  "title": "Alicante y Santa Pola",
+  "year": 1965,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "OeQ2CfY5k0A",
+  "title": "Colonia Santa Isabel, Alicante",
+  "year": 1965,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "A8cmTV7MQGU",
+  "title": "Colonia Santa Isabel, Alicante (2)",
+  "year": 1965,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "ZUJZgwVaMqU",
+  "title": "El mercado de Alicante en el pasado",
+  "year": 1965,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "Mp5jKBPfwqQ",
+  "title": "La Albufera de Alicante en otros tiempos",
+  "year": 1965,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "Zivj_b4YvYo",
+  "title": "La Albufera, Alicante",
+  "year": 1965,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "OHXiPx4D9rQ",
+  "title": "San Juan, Alicante, en otros tiempos",
+  "year": 1965,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "13xmPeRbGhc",
+  "title": "Urbanización de la Playa de San Juan, Alicante",
+  "year": 1965,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "QGWijUuMzKM",
+  "title": "Flores de almendro en Alicante",
+  "year": 1966,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "9wtBMYP4Sqo",
+  "title": "Guadalest y Benidorm, Alicante",
+  "year": 1966,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "bhNNjgiLbaM",
+  "title": "Los gatos callejeros de Alicante",
+  "year": 1966,
+  "circa": false
+ },
+ {
   "id": "7ChDNakfdis",
   "title": "Secuencia filmada en Ciudad de Alicante para la película \"Cartes sur table\" (1966)",
   "source": "youtube",
   "year": 1966,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "1G51p21ZPBw",
+  "title": "El centro de Alicante en otros tiempos",
+  "year": 1969,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "YUxsDQzWe60",
+  "title": "Husein Rofé en Alicante",
+  "year": 1969,
   "circa": false
  },
  {
@@ -3483,6 +3667,30 @@
   "circa": false
  },
  {
+  "activo": true,
+  "source": "youtube",
+  "id": "YOx2xvqPpzw",
+  "title": "El Campello y la Coveta Fumà en Navidad, Alicante",
+  "year": 1970,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "6EsHwg2bNwM",
+  "title": "Los Reyes Magos en Alicante",
+  "year": 1970,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "B1Px6pSGzrY",
+  "title": "Navidad nevada en Alicante",
+  "year": 1970,
+  "circa": false
+ },
+ {
   "source": "foto",
   "file": "fotos/1970s/1971_subida_al_castillo_de_santa_barbara.jpg",
   "title": "Subida al castillo de santa barbara",
@@ -3497,10 +3705,122 @@
   "circa": false
  },
  {
+  "activo": true,
+  "source": "youtube",
+  "id": "W7qm5dRzFkI",
+  "title": "La playa de Alicante",
+  "year": 1973,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "Q8w0f-c0y0Y",
+  "title": "Castillos de Alicante — Santa Bárbara, Sax, Biar y Villena",
+  "year": 1974,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "xyywDo1MEAo",
+  "title": "Las playas de Benidorm en invierno, Alicante",
+  "year": 1974,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "jNkdcX0xplM",
+  "title": "Las salinas de Santa Pola, Alicante — cómo se obtiene la sal del mar",
+  "year": 1974,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "XS0eteT_hPo",
+  "title": "Navidad en las playas de Alicante",
+  "year": 1974,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "Ro_RFn5u0gw",
+  "title": "Turismo en Benidorm — el Trenet Limón Express y Finestrat, Alicante",
+  "year": 1974,
+  "circa": false
+ },
+ {
   "source": "foto",
   "file": "fotos/1970s/1975_3_avda.jpg",
   "title": "3 avda",
   "year": 1975,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "mjzs8mu9Tng",
+  "title": "Ala delta en el Peñón de Ifach, Calpe, Alicante",
+  "year": 1976,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "79rIod0iDJk",
+  "title": "Justas y torneos medievales en el Castillo de Jijona, Alicante",
+  "year": 1977,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "4X0JorC7iD0",
+  "title": "La ciudad de Elche — Huerto del Cura y el Palmeral, Alicante",
+  "year": 1977,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "mUlQMEbUcyQ",
+  "title": "Parasailing en Benidorm, Alicante",
+  "year": 1977,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "t9ODNTU_Hbg",
+  "title": "Benidorm en invierno — regatas y Trofeo Príncipe, Alicante",
+  "year": 1978,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "eY3gQfv6faY",
+  "title": "Los juguetes de Ibi, Alicante",
+  "year": 1978,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "C7aTtOREx04",
+  "title": "Festival de Habaneras de Torrevieja, Alicante",
+  "year": 1979,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "Gma2AzQiUTA",
+  "title": "Moros y Cristianos de Villajoyosa, Alicante",
+  "year": 1979,
   "circa": false
  },
  {
@@ -3516,6 +3836,15 @@
   "title": "Alacant anys 80",
   "year": 1980,
   "circa": true
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "s_qVCCjsVHM",
+  "title": "Arenys de Mar — Petanca, Comunión (Super 8) [CTA003]",
+  "year": 1980,
+  "circa": true,
+  "coleccion": "La Pequeña Filmoteca"
  },
  {
   "source": "foto",
@@ -3539,6 +3868,134 @@
   "circa": true
  },
  {
+  "activo": true,
+  "source": "youtube",
+  "id": "OHhZdWCWoUI",
+  "title": "Boda de Charo, Murcia — Fernando Antonio (Super 8) [CTA007]",
+  "year": 1981,
+  "circa": false,
+  "coleccion": "La Pequeña Filmoteca"
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "IF9XiHNRuJQ",
+  "title": "Riada de Alicante, San Gabriel (Super 8) [CS8A01]",
+  "year": 1982,
+  "circa": false,
+  "coleccion": "La Pequeña Filmoteca"
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "5eDaMFpClCw",
+  "title": "Vacaciones en la Playa de San Juan, Alicante",
+  "year": 1982,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "Za3w2sNO6Q8",
+  "title": "Campeonato de España de Petanca — Comunión (Super 8) [CTA012]",
+  "year": 1983,
+  "circa": false,
+  "coleccion": "La Pequeña Filmoteca"
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "JOgJrhecNGI",
+  "title": "Fin de viaje de Barcelona — Hogueras de Sant Joan, Alacant (Super 8) [CTA002]",
+  "year": 1983,
+  "circa": false,
+  "coleccion": "La Pequeña Filmoteca"
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "yjXX0tcHCoE",
+  "title": "Juan Pablo II en televisión — Relleu (Super 8) [CTA005]",
+  "year": 1983,
+  "circa": false,
+  "coleccion": "La Pequeña Filmoteca"
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "CadC4L8Fki4",
+  "title": "Torneo de Ases de Elda — Petanca, Club Vigel, Fogueres (Super 8) [CTA001]",
+  "year": 1983,
+  "circa": false,
+  "coleccion": "La Pequeña Filmoteca"
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "6EwO43uvrdk",
+  "title": "Torneo de Petanca — 12 Horas «Miret Forte», Alicante (Super 8) [CTA0010]",
+  "year": 1983,
+  "circa": false,
+  "coleccion": "La Pequeña Filmoteca"
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "GIFKkk9unXk",
+  "title": "Vacaciones en Alicante y Benidorm",
+  "year": 1983,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "9hQgjQVJ8Qc",
+  "title": "Windsurf en Alicante",
+  "year": 1983,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "Wcp9iiM5bIk",
+  "title": "Petanca Delrío — Toni Fernando (Super 8) [CTA006]",
+  "year": 1984,
+  "circa": false,
+  "coleccion": "La Pequeña Filmoteca"
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "YiDbVs_BO4o",
+  "title": "Alicante 1985",
+  "year": 1985,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "Nd-LQQLmwDg",
+  "title": "La tierra de Alicante (documental, Archivo TVE)",
+  "year": 1985,
+  "circa": true
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "rLylGG6xHSc",
+  "title": "La Albufereta, Alicante",
+  "year": 1987,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "tS3OqKuTZDU",
+  "title": "La estación de Alicante en 1989 (serie «Trenes reales»)",
+  "year": 1989,
+  "circa": false
+ },
+ {
   "source": "foto",
   "file": "fotos/1990s/1990_4_maisonnave_16_18_fotografia_ctaa.jpg",
   "title": "4 maisonnave 16 18 fotografia ctaa",
@@ -3550,6 +4007,74 @@
   "file": "fotos/1990s/1992_cine_bahia_la_albufereta_alicante_cerro_sus.jpg",
   "title": "Cine bahia la albufereta alicante cerro sus",
   "year": 1992,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "xloL8xBT8lg",
+  "title": "Moros y Cristianos — Entrada Mora de San Blas, Alicante",
+  "year": 1992,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "INEGKop3vQg",
+  "title": "POR COMPLETAR — pon aquí el título",
+  "year": 1992,
+  "circa": false,
+  "_nota": "YouTube no dejó leer el título; escríbelo a mano (año estimado por la URL)"
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "W17UsQlCtPY",
+  "title": "POR COMPLETAR — pon aquí el título",
+  "year": 1992,
+  "circa": false,
+  "_nota": "YouTube no dejó leer el título; escríbelo a mano (año estimado por la URL)"
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "8IEsNs5akNI",
+  "title": "POR COMPLETAR — pon aquí el título",
+  "year": 1992,
+  "circa": false,
+  "_nota": "YouTube no dejó leer el título; escríbelo a mano (año estimado por la URL)"
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "EaWSUNC0JtI",
+  "title": "POR COMPLETAR — pon aquí el título",
+  "year": 1992,
+  "circa": false,
+  "_nota": "YouTube no dejó leer el título; escríbelo a mano (año estimado por la URL)"
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "DURWPSwAgnE",
+  "title": "Tren expreso con locomotora diésel 333 en Alicante",
+  "year": 1992,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "bZslcOjFklw",
+  "title": "Especial Rally Costa Blanca, Alicante",
+  "year": 1995,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "U5pkTCGPLOI",
+  "title": "Inundación en Alicante, 30 de septiembre de 1997",
+  "year": 1997,
   "circa": false
  },
  {
@@ -3565,6 +4090,42 @@
   "title": "Esta la hice sobre el ano en",
   "year": 1998,
   "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "NTUhcxsooNo",
+  "title": "POR COMPLETAR — pon aquí el título",
+  "year": 1998,
+  "circa": false,
+  "_nota": "YouTube no dejó leer el título; escríbelo a mano (año estimado por la URL)"
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "XK407VA5Xfg",
+  "title": "Alicante en Blanco y Negro (Retazos de la Costa Blanca)",
+  "year": 2001,
+  "circa": false,
+  "_nota": "documental de 2001 con imágenes de principios del s. XX; datado por año de producción"
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "-5cDnyE5uMw",
+  "title": "POR COMPLETAR — pon aquí el título",
+  "year": 2006,
+  "circa": false,
+  "_nota": "YouTube no dejó leer el título; escríbelo a mano (año estimado por la URL)"
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "-BunUHWDieM",
+  "title": "Historia de Alicante, entre dos castillos",
+  "year": 2019,
+  "circa": false,
+  "_nota": "documental de divulgación (We Act.cinema); ajusta el año si conoces la fecha exacta"
  },
  {
   "source": "foto",
@@ -3663,13 +4224,6 @@
   "period": "1500–1700"
  },
  {
-  "id": "XK407VA5Xfg",
-  "title": "Alicante en Blanco y Negro  (Retazos de la Costa Blanca)",
-  "source": "youtube",
-  "year": null,
-  "circa": false
- },
- {
   "source": "foto",
   "file": "fotos/1500-1700/EL PUERTO DURANTE LOS SIGLOS XV AL XVIII.jpg",
   "title": "EL PUERTO DURANTE LOS SIGLOS XV AL XVIII",
@@ -3684,5 +4238,14 @@
   "year": null,
   "circa": false,
   "period": "1500–1700"
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "FGMGIoo_UEM",
+  "title": "POR COMPLETAR — pon aquí el título",
+  "year": null,
+  "circa": false,
+  "_nota": "YouTube no dejó leer los datos; escribe título y año a mano"
  }
 ]
