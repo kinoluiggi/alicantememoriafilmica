@@ -369,33 +369,37 @@
    "activo": true,
    "source": "youtube",
    "id": "IF9XiHNRuJQ",
-   "title": "Riada de Alicante, San Gabriel (Super 8)",
+   "title": "Riada de Alicante, San Gabriel (Super 8) [CS8A01]",
    "year": 1982,
-   "circa": false
+   "circa": false,
+   "coleccion": "La Pequeña Filmoteca"
   },
   {
    "activo": true,
    "source": "youtube",
    "id": "6EwO43uvrdk",
-   "title": "Torneo de petanca, 12 horas (Alicante) (Super 8)",
-   "year": 1980,
-   "circa": true
+   "title": "Torneo de Petanca — 12 Horas «Miret Forte», Alicante (Super 8) [CTA0010]",
+   "year": 1983,
+   "circa": false,
+   "coleccion": "La Pequeña Filmoteca"
   },
   {
    "activo": true,
    "source": "youtube",
    "id": "yjXX0tcHCoE",
-   "title": "Juan Pablo II en televisión, Relleu (Super 8)",
+   "title": "Juan Pablo II en televisión — Relleu (Super 8) [CTA005]",
    "year": 1983,
-   "circa": false
+   "circa": false,
+   "coleccion": "La Pequeña Filmoteca"
   },
   {
    "activo": true,
    "source": "youtube",
    "id": "JOgJrhecNGI",
-   "title": "Hogueras de Sant Joan, Alicante (Super 8)",
+   "title": "Fin de viaje de Barcelona — Hogueras de Sant Joan, Alacant (Super 8) [CTA002]",
    "year": 1983,
-   "circa": false
+   "circa": false,
+   "coleccion": "La Pequeña Filmoteca"
   },
   {
    "activo": true,
@@ -514,6 +518,60 @@
    "year": 1998,
    "circa": false,
    "_nota": "YouTube no dejó leer el título; escríbelo a mano (año estimado por la URL)"
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "CadC4L8Fki4",
+   "title": "Torneo de Ases de Elda — Petanca, Club Vigel, Fogueres (Super 8) [CTA001]",
+   "year": 1983,
+   "circa": false,
+   "coleccion": "La Pequeña Filmoteca"
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "s_qVCCjsVHM",
+   "title": "Arenys de Mar — Petanca, Comunión (Super 8) [CTA003]",
+   "year": 1980,
+   "circa": true,
+   "coleccion": "La Pequeña Filmoteca"
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "Wcp9iiM5bIk",
+   "title": "Petanca Delrío — Toni Fernando (Super 8) [CTA006]",
+   "year": 1984,
+   "circa": false,
+   "coleccion": "La Pequeña Filmoteca"
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "OHhZdWCWoUI",
+   "title": "Boda de Charo, Murcia — Fernando Antonio (Super 8) [CTA007]",
+   "year": 1981,
+   "circa": false,
+   "coleccion": "La Pequeña Filmoteca"
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "Za3w2sNO6Q8",
+   "title": "Campeonato de España de Petanca — Comunión (Super 8) [CTA012]",
+   "year": 1983,
+   "circa": false,
+   "coleccion": "La Pequeña Filmoteca"
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "XK407VA5Xfg",
+   "title": "Alicante en Blanco y Negro (Retazos de la Costa Blanca)",
+   "year": 2001,
+   "circa": false,
+   "_nota": "documental de 2001 con imágenes de principios del s. XX; datado por año de producción"
   }
  ]
 }

@@ -192,14 +192,25 @@ def main():
         print("!! Ninguna fuente devolvió piezas. Se conserva el catálogo anterior.", file=sys.stderr)
         sys.exit(1)
 
-    # deduplicar por (source, id) o ruta/url
-    vistos, unicos = set(), []
+    # deduplicar por (source, id) o ruta/url.
+    # Si un id aparece en el canal y también como entrada manual, la manual
+    # tiene prioridad (permite fijar año/título a un video del canal propio).
+    por_clave = {}
+    orden = []
     for p in piezas:
         clave = (p.get("source"), p.get("id") or p.get("file") or p.get("url"))
-        if clave in vistos:
-            continue
-        vistos.add(clave)
-        unicos.append(p)
+        if clave not in por_clave:
+            por_clave[clave] = p
+            orden.append(clave)
+        else:
+            prev = por_clave[clave]
+            # la entrada con año explícito (típicamente la manual) gana;
+            # si ambas o ninguna, se conserva la primera
+            if p.get("year") and not prev.get("year"):
+                por_clave[clave] = p
+            elif p.get("year") and prev.get("year") and len(p.get("title","")) > len(prev.get("title","")):
+                por_clave[clave] = p
+    unicos = [por_clave[c] for c in orden]
 
     # año
     sin_ano = []
