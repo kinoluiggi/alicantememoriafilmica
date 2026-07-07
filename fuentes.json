@@ -360,10 +360,9 @@
    "activo": true,
    "source": "youtube",
    "id": "FGMGIoo_UEM",
-   "title": "POR COMPLETAR — pon aquí el título",
-   "year": null,
-   "circa": false,
-   "_nota": "YouTube no dejó leer los datos; escribe título y año a mano"
+   "title": "Alicante en los años 70 — película doméstica en 8 mm",
+   "year": 1975,
+   "circa": true
   },
   {
    "activo": true,
@@ -469,55 +468,49 @@
    "activo": true,
    "source": "youtube",
    "id": "-5cDnyE5uMw",
-   "title": "POR COMPLETAR — pon aquí el título",
+   "title": "Casting de la película «Manolete» en el Centro 14, Alicante",
    "year": 2006,
-   "circa": false,
-   "_nota": "YouTube no dejó leer el título; escríbelo a mano (año estimado por la URL)"
+   "circa": false
   },
   {
    "activo": true,
    "source": "youtube",
    "id": "INEGKop3vQg",
-   "title": "POR COMPLETAR — pon aquí el título",
+   "title": "La estación de Alicante en agosto de 1992 (serie «Trenes reales»)",
    "year": 1992,
-   "circa": false,
-   "_nota": "YouTube no dejó leer el título; escríbelo a mano (año estimado por la URL)"
+   "circa": false
   },
   {
    "activo": true,
    "source": "youtube",
    "id": "W17UsQlCtPY",
-   "title": "POR COMPLETAR — pon aquí el título",
+   "title": "Cremà de la Hoguera de Alicante (1992 y 1999)",
    "year": 1992,
-   "circa": false,
-   "_nota": "YouTube no dejó leer el título; escríbelo a mano (año estimado por la URL)"
+   "circa": false
   },
   {
    "activo": true,
    "source": "youtube",
    "id": "8IEsNs5akNI",
-   "title": "POR COMPLETAR — pon aquí el título",
+   "title": "Alcoy nevada, Alicante",
    "year": 1992,
-   "circa": false,
-   "_nota": "YouTube no dejó leer el título; escríbelo a mano (año estimado por la URL)"
+   "circa": false
   },
   {
    "activo": true,
    "source": "youtube",
    "id": "EaWSUNC0JtI",
-   "title": "POR COMPLETAR — pon aquí el título",
-   "year": 1992,
-   "circa": false,
-   "_nota": "YouTube no dejó leer el título; escríbelo a mano (año estimado por la URL)"
+   "title": "Alicante en los 90 — videoclip de la desaparecida televisión local Localia",
+   "year": 1995,
+   "circa": true
   },
   {
    "activo": true,
    "source": "youtube",
    "id": "NTUhcxsooNo",
-   "title": "POR COMPLETAR — pon aquí el título",
-   "year": 1998,
-   "circa": false,
-   "_nota": "YouTube no dejó leer el título; escríbelo a mano (año estimado por la URL)"
+   "title": "La riada de Alicante",
+   "year": 1997,
+   "circa": false
   },
   {
    "activo": true,
@@ -572,6 +565,118 @@
    "year": 2001,
    "circa": false,
    "_nota": "documental de 2001 con imágenes de principios del s. XX; datado por año de producción"
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "PnC0Sse_Bng",
+   "title": "Hogueras de Alicante — Cremà de la Hoguera Carolinas Altas (Canal 9)",
+   "year": 2005,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "K7XAwIYNzcQ",
+   "title": "Recorrido por Alicante",
+   "year": 2005,
+   "circa": true
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "-qYV6I3G5tA",
+   "title": "Benidorm — Estación FGV del Trenet Turístico Limón Exprés, Alicante",
+   "year": 2002,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "f4wRJw6BZl4",
+   "title": "Hogueras de Alicante — Cremà de la Hoguera Carolinas Altas (Canal 9)",
+   "year": 2002,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "AAy-vYfv0pE",
+   "title": "Inauguración del MARQ, Alicante (Canal 55, TV Marina Baixa)",
+   "year": 2002,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "b9LCAoZimqQ",
+   "title": "Alicante 2009",
+   "year": 2009,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "ioKsjqgp4JQ",
+   "title": "Primera mascletà de Alicante — Hogueras 2009",
+   "year": 2009,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "o3qp67xj4Ss",
+   "title": "Conduciendo por la Gran Vía, Alicante",
+   "year": 2009,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "LQjNCUAYv34",
+   "title": "Costa Blanca, Alicante",
+   "year": 2012,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "IPR1AdvS0Q8",
+   "title": "Alicante 2012",
+   "year": 2012,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "iOYacSXpKrk",
+   "title": "Alicante — vídeo timelapse",
+   "year": 2012,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "jwdIBhmjZrY",
+   "title": "Hogueras de Alicante 2012",
+   "year": 2012,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "UBFheVnkAR0",
+   "title": "Alicante Epic Session 2012",
+   "year": 2012,
+   "circa": false
+  },
+  {
+   "activo": true,
+   "source": "youtube",
+   "id": "G_jC-OpLb1M",
+   "title": "El Castell de Guadalest — la villa escondida en una roca, Alicante",
+   "year": 2020,
+   "circa": false
   }
  ]
 }
