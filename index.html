@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alicante, Memoria Fílmica — Línea de tiempo 1905–1966</title>
-<meta name="description" content="La memoria fílmica de Alicante ordenada cronológicamente: noticiarios, documentales y rodajes en la provincia, 1905–1966.">
+<title>Alicante, Memoria Fílmica — Cine y fotografía de la provincia</title>
+<meta name="description" content="Archivo audiovisual de la provincia de Alicante: cine (1905–2020) y fotografía (siglos XVI–XX) ordenados cronológicamente. Una línea de tiempo del cine y una fototeca de cinco siglos.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -72,9 +72,8 @@ nav{
 }
 nav .fila{
   max-width:1080px;margin:0 auto;padding:10px 24px;
-  display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;
+  display:flex;gap:8px;align-items:center;flex-wrap:wrap;row-gap:8px;
 }
-nav .fila::-webkit-scrollbar{display:none}
 nav a{
   font-family:'IBM Plex Mono',monospace;font-size:13px;
   text-decoration:none;color:var(--tinta);
@@ -272,10 +271,10 @@ footer .mono{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing
 <body>
 
 <header>
-  <p class="sobre">Canal de archivo · Provincia de Alicante · 1905–1966</p>
+  <p class="sobre">Canal de archivo · Provincia de Alicante · Cine 1905–2020 · Fototeca ss. XVI–XX</p>
   <h1>Alicante,<br><em>memoria fílmica</em></h1>
   <div class="onda sub-onda" aria-hidden="true"></div>
-  <p class="intro">Noticiarios, documentales, rodajes de paso y actualidades filmadas en la provincia de Alicante, reunidas y ordenadas <strong>por año de filmación</strong> — no de publicación. De la visita de Alfonso XIII al puerto en 1905 a las cámaras extranjeras de los años sesenta, pasando por la guerra, las Hogueras y el trabajo de la huerta y la fábrica.</p>
+  <p class="intro">Noticiarios, documentales, rodajes de paso y actualidades filmadas en la provincia de Alicante, reunidas y ordenadas <strong>por año de filmación</strong> — no de publicación. De la visita de Alfonso XIII al puerto en 1905 al cine doméstico y turístico de las últimas décadas, pasando por la guerra, las Hogueras, la huerta y la fábrica. La memoria en imágenes fijas vive en la Fototeca.</p>
   <div class="stats" id="stats"></div>
 </header>
 
@@ -594,5 +593,8 @@ function construir(){
 }
 construir();
 </script>
+<!-- Analítica de visitas (GoatCounter, sin cookies) -->
+<script data-goatcounter="https://alicantememoria.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
