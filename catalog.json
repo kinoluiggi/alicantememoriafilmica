@@ -8,13 +8,6 @@
  },
  {
   "source": "foto",
-  "file": "fotos/1500-1700/En su conjunto el arrabal de San Francisco contaba contaba en 1757 con 659 casas el 23_ del total urbano que suponían el segundo valor patrimonial edificado en 1754 estaba ya ocupado por 2.375 habitantes el 21_ del total de la ciudad .jpg",
-  "title": "En su conjunto el arrabal de San Francisco contaba contaba en con 659 casas el 23_ del total urbano que suponían el segu",
-  "year": 1757,
-  "circa": false
- },
- {
-  "source": "foto",
   "file": "fotos/1800s/bahia_de_alicante_aprox_1788_a_1790.jpg",
   "title": "𝐁𝐀𝐇𝐈́𝐀 𝐃𝐄 𝐀𝐋𝐈𝐂𝐀𝐍𝐓𝐄, 𝐚𝐩𝐫𝐨𝐱‧ 𝟏𝟕𝟖𝟖 𝐚 𝟏𝟕𝟗𝟎 𝐀𝐥𝐞𝐱𝐚𝐧𝐝𝐫𝐞 𝐉𝐞𝐚𝐧 𝐍𝐨ë𝐥",
   "year": 1788,
@@ -29,26 +22,11 @@
  },
  {
   "source": "foto",
-  "file": "fotos/1500-1700/SAUCES EN EL PASEO DEL ENLOSADO ALICANTE, 1790.jpg",
-  "title": "SAUCES EN EL PASEO DEL ENLOSADO ALICANTE",
-  "year": 1790,
-  "circa": false
- },
- {
-  "source": "foto",
   "file": "fotos/1500-1700/1795_vista_de_la_huerta_de_alicante_tomada.jpg",
   "title": "Vista de la Huerta de Alicante tomada de la Torre de Aigües",
   "year": 1795,
   "circa": true,
   "description": "Grabado publicado entre y . Diario Información - Un Siglo en Imágenes Archivo Municipal de Alicante"
- },
- {
-  "source": "foto",
-  "file": "fotos/1500-1700/Vista de la Huerta de Alicante tomada de la Torre de Aigües. Grabado publicado entre 1795 y 1797 . Diario Información - Un Siglo en Imágenes Archivo Municipal de Alicante.jpg",
-  "title": "Vista de la Huerta de Alicante tomada de la Torre de Aigües",
-  "year": 1795,
-  "circa": true,
-  "description": "Grabado publicado entre 1795 y 1797 . Diario Información - Un Siglo en Imágenes Archivo Municipal de Alicante"
  },
  {
   "source": "foto",
@@ -73,13 +51,6 @@
  },
  {
   "source": "foto",
-  "file": "fotos/1800s/fb_1604496.jpg",
-  "title": "",
-  "year": 1800,
-  "circa": true
- },
- {
-  "source": "foto",
   "file": "fotos/1800s/fb_1604496_2.jpg",
   "title": "",
   "year": 1800,
@@ -88,13 +59,6 @@
  {
   "source": "foto",
   "file": "fotos/1800s/fb_1896853.jpg",
-  "title": "",
-  "year": 1800,
-  "circa": true
- },
- {
-  "source": "foto",
-  "file": "fotos/1800s/fb_1896853_2.jpg",
   "title": "",
   "year": 1800,
   "circa": true
@@ -221,18 +185,17 @@
  },
  {
   "source": "foto",
+  "file": "fotos/1800s/grabado_a_color_de_alicante_mitad_del.jpg",
+  "title": "Grabado a color de alicante mitad del",
+  "year": 1800,
+  "circa": true
+ },
+ {
+  "source": "foto",
   "file": "fotos/1800s/grabado_de_panoramica_de_alicante_en_el.jpg",
   "title": "Grabado de panorámica de Alicante en el siglo XIX",
   "year": 1800,
   "circa": false
- },
- {
-  "source": "foto",
-  "file": "fotos/1800s/gravado_a_color_de_alicante_mitad_del.jpg",
-  "title": "Gravado a color de Alicante mitad del S.XlX",
-  "year": 1800,
-  "circa": false,
-  "description": "Se ve la muralla de la rambla , por ahí estuvo la Puerta de la Reina"
  },
  {
   "source": "foto",
@@ -278,14 +241,6 @@
   "title": "Castillo de Santa Barbara",
   "year": 1802,
   "circa": false
- },
- {
-  "source": "foto",
-  "file": "fotos/1800s/1808_la_puerta_del_mar_siglo_xix.jpg",
-  "title": "La Puerta del Mar, Siglo XIX",
-  "year": 1808,
-  "circa": true,
-  "description": "Posteriormente en se derribaria la batería allí existente por haber quedado inútil para la función que se construyó, motivado por la obra nueva del muelle"
  },
  {
   "source": "foto",
@@ -458,41 +413,6 @@
  },
  {
   "source": "foto",
-  "file": "fotos/1800s/1860_vista_de_las_playas_del_coco_postiguet_2.jpg",
-  "title": "Vista de las playas del Cocó, Postiguet y del puerto desde la Sierra del Molinet",
-  "year": 1860,
-  "circa": false
- },
- {
-  "source": "foto",
-  "file": "fotos/1800s/1862_puerto_de_alicante.jpg",
-  "title": "Puerto de Alicante",
-  "year": 1862,
-  "circa": false
- },
- {
-  "source": "foto",
-  "file": "fotos/1800s/1862_vista_puerto.jpg",
-  "title": "Vista puerto",
-  "year": 1862,
-  "circa": false
- },
- {
-  "source": "foto",
-  "file": "fotos/1800s/1862_vista_puerto_2.jpg",
-  "title": "Vista puerto",
-  "year": 1862,
-  "circa": false
- },
- {
-  "source": "foto",
-  "file": "fotos/1800s/1863_alicante.jpg",
-  "title": "Alicante",
-  "year": 1863,
-  "circa": false
- },
- {
-  "source": "foto",
   "file": "fotos/1800s/1863_alicante_barrio_santa_cruz.jpg",
   "title": "Alicante .barrio santa cruz",
   "year": 1863,
@@ -537,14 +457,6 @@
  {
   "source": "foto",
   "file": "fotos/1890s/1867_circa.jpg",
-  "title": "Circa",
-  "year": 1867,
-  "circa": false,
-  "description": "Baluarte San Carlos. En el malecón del puerto no parece que se haya realizado el Paseo de Olalde (anterior al Paseo de Los Mártires), y al fondo a la derecha, se observa el Mercado de la Puerta del Mar"
- },
- {
-  "source": "foto",
-  "file": "fotos/1890s/1867_circa_2.jpg",
   "title": "Circa",
   "year": 1867,
   "circa": false,
@@ -640,14 +552,6 @@
  {
   "source": "foto",
   "file": "fotos/1890s/1885_alicante_vista_desde_el_muelle_de_levante.jpg",
-  "title": "Alicante vista desde el muelle de Levante",
-  "year": 1885,
-  "circa": true,
-  "description": "Circa- - León y Lévy"
- },
- {
-  "source": "foto",
-  "file": "fotos/1890s/1885_alicante_vista_desde_el_muelle_de_levante_2.jpg",
   "title": "Alicante vista desde el muelle de Levante",
   "year": 1885,
   "circa": true,
@@ -1010,14 +914,6 @@
  },
  {
   "source": "foto",
-  "file": "fotos/1800s/1890_muelle_de_la_refineria_la_britanica.jpg",
-  "title": "Muelle de la Refinería la Británica",
-  "year": 1890,
-  "circa": false,
-  "description": "La Cantera, depositos. Foto Archivo Municipal"
- },
- {
-  "source": "foto",
   "file": "fotos/1800s/1890_muelle_de_la_refineria_la_britanica_2.jpg",
   "title": "Muelle de la Refinería la Británica",
   "year": 1890,
@@ -1118,13 +1014,6 @@
  {
   "source": "foto",
   "file": "fotos/1800s/1893_alicante.jpg",
-  "title": "Alicante",
-  "year": 1893,
-  "circa": false
- },
- {
-  "source": "foto",
-  "file": "fotos/1800s/1893_alicante_2.jpg",
   "title": "Alicante",
   "year": 1893,
   "circa": false
@@ -3762,6 +3651,14 @@
  {
   "activo": true,
   "source": "youtube",
+  "id": "FGMGIoo_UEM",
+  "title": "Alicante en los años 70 — película doméstica en 8 mm",
+  "year": 1975,
+  "circa": true
+ },
+ {
+  "activo": true,
+  "source": "youtube",
   "id": "mjzs8mu9Tng",
   "title": "Ala delta en el Peñón de Ifach, Calpe, Alicante",
   "year": 1976,
@@ -4003,9 +3900,33 @@
   "circa": false
  },
  {
+  "activo": true,
+  "source": "youtube",
+  "id": "8IEsNs5akNI",
+  "title": "Alcoy nevada, Alicante",
+  "year": 1992,
+  "circa": false
+ },
+ {
   "source": "foto",
   "file": "fotos/1990s/1992_cine_bahia_la_albufereta_alicante_cerro_sus.jpg",
   "title": "Cine bahia la albufereta alicante cerro sus",
+  "year": 1992,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "W17UsQlCtPY",
+  "title": "Cremà de la Hoguera de Alicante (1992 y 1999)",
+  "year": 1992,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "INEGKop3vQg",
+  "title": "La estación de Alicante en agosto de 1992 (serie «Trenes reales»)",
   "year": 1992,
   "circa": false
  },
@@ -4020,46 +3941,18 @@
  {
   "activo": true,
   "source": "youtube",
-  "id": "INEGKop3vQg",
-  "title": "POR COMPLETAR — pon aquí el título",
+  "id": "DURWPSwAgnE",
+  "title": "Tren expreso con locomotora diésel 333 en Alicante",
   "year": 1992,
-  "circa": false,
-  "_nota": "YouTube no dejó leer el título; escríbelo a mano (año estimado por la URL)"
- },
- {
-  "activo": true,
-  "source": "youtube",
-  "id": "W17UsQlCtPY",
-  "title": "POR COMPLETAR — pon aquí el título",
-  "year": 1992,
-  "circa": false,
-  "_nota": "YouTube no dejó leer el título; escríbelo a mano (año estimado por la URL)"
- },
- {
-  "activo": true,
-  "source": "youtube",
-  "id": "8IEsNs5akNI",
-  "title": "POR COMPLETAR — pon aquí el título",
-  "year": 1992,
-  "circa": false,
-  "_nota": "YouTube no dejó leer el título; escríbelo a mano (año estimado por la URL)"
+  "circa": false
  },
  {
   "activo": true,
   "source": "youtube",
   "id": "EaWSUNC0JtI",
-  "title": "POR COMPLETAR — pon aquí el título",
-  "year": 1992,
-  "circa": false,
-  "_nota": "YouTube no dejó leer el título; escríbelo a mano (año estimado por la URL)"
- },
- {
-  "activo": true,
-  "source": "youtube",
-  "id": "DURWPSwAgnE",
-  "title": "Tren expreso con locomotora diésel 333 en Alicante",
-  "year": 1992,
-  "circa": false
+  "title": "Alicante en los 90 — videoclip de la desaparecida televisión local Localia",
+  "year": 1995,
+  "circa": true
  },
  {
   "activo": true,
@@ -4074,6 +3967,14 @@
   "source": "youtube",
   "id": "U5pkTCGPLOI",
   "title": "Inundación en Alicante, 30 de septiembre de 1997",
+  "year": 1997,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "NTUhcxsooNo",
+  "title": "La riada de Alicante",
   "year": 1997,
   "circa": false
  },
@@ -4094,15 +3995,6 @@
  {
   "activo": true,
   "source": "youtube",
-  "id": "NTUhcxsooNo",
-  "title": "POR COMPLETAR — pon aquí el título",
-  "year": 1998,
-  "circa": false,
-  "_nota": "YouTube no dejó leer el título; escríbelo a mano (año estimado por la URL)"
- },
- {
-  "activo": true,
-  "source": "youtube",
   "id": "XK407VA5Xfg",
   "title": "Alicante en Blanco y Negro (Retazos de la Costa Blanca)",
   "year": 2001,
@@ -4112,11 +4004,114 @@
  {
   "activo": true,
   "source": "youtube",
+  "id": "-qYV6I3G5tA",
+  "title": "Benidorm — Estación FGV del Trenet Turístico Limón Exprés, Alicante",
+  "year": 2002,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "f4wRJw6BZl4",
+  "title": "Hogueras de Alicante — Cremà de la Hoguera Carolinas Altas (Canal 9)",
+  "year": 2002,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "AAy-vYfv0pE",
+  "title": "Inauguración del MARQ, Alicante (Canal 55, TV Marina Baixa)",
+  "year": 2002,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "PnC0Sse_Bng",
+  "title": "Hogueras de Alicante — Cremà de la Hoguera Carolinas Altas (Canal 9)",
+  "year": 2005,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "K7XAwIYNzcQ",
+  "title": "Recorrido por Alicante",
+  "year": 2005,
+  "circa": true
+ },
+ {
+  "activo": true,
+  "source": "youtube",
   "id": "-5cDnyE5uMw",
-  "title": "POR COMPLETAR — pon aquí el título",
+  "title": "Casting de la película «Manolete» en el Centro 14, Alicante",
   "year": 2006,
-  "circa": false,
-  "_nota": "YouTube no dejó leer el título; escríbelo a mano (año estimado por la URL)"
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "b9LCAoZimqQ",
+  "title": "Alicante 2009",
+  "year": 2009,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "o3qp67xj4Ss",
+  "title": "Conduciendo por la Gran Vía, Alicante",
+  "year": 2009,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "ioKsjqgp4JQ",
+  "title": "Primera mascletà de Alicante — Hogueras 2009",
+  "year": 2009,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "IPR1AdvS0Q8",
+  "title": "Alicante 2012",
+  "year": 2012,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "UBFheVnkAR0",
+  "title": "Alicante Epic Session 2012",
+  "year": 2012,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "iOYacSXpKrk",
+  "title": "Alicante — vídeo timelapse",
+  "year": 2012,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "LQjNCUAYv34",
+  "title": "Costa Blanca, Alicante",
+  "year": 2012,
+  "circa": false
+ },
+ {
+  "activo": true,
+  "source": "youtube",
+  "id": "jwdIBhmjZrY",
+  "title": "Hogueras de Alicante 2012",
+  "year": 2012,
+  "circa": false
  },
  {
   "activo": true,
@@ -4128,12 +4123,12 @@
   "_nota": "documental de divulgación (We Act.cinema); ajusta el año si conoces la fecha exacta"
  },
  {
-  "source": "foto",
-  "file": "fotos/1500-1700/186513774_3894523837334404_5474120310305970547_n.jpg",
-  "title": "",
-  "year": null,
-  "circa": false,
-  "period": "1500–1700"
+  "activo": true,
+  "source": "youtube",
+  "id": "G_jC-OpLb1M",
+  "title": "El Castell de Guadalest — la villa escondida en una roca, Alicante",
+  "year": 2020,
+  "circa": false
  },
  {
   "source": "foto",
@@ -4177,38 +4172,6 @@
  },
  {
   "source": "foto",
-  "file": "fotos/1500-1700/fb_186513774.jpg",
-  "title": "",
-  "year": null,
-  "circa": false,
-  "period": "1500–1700"
- },
- {
-  "source": "foto",
-  "file": "fotos/1500-1700/fb_272878109.jpg",
-  "title": "",
-  "year": null,
-  "circa": false,
-  "period": "1500–1700"
- },
- {
-  "source": "foto",
-  "file": "fotos/1500-1700/fb_305497491.jpg",
-  "title": "",
-  "year": null,
-  "circa": false,
-  "period": "1500–1700"
- },
- {
-  "source": "foto",
-  "file": "fotos/1500-1700/fb_306185083.jpg",
-  "title": "",
-  "year": null,
-  "circa": false,
-  "period": "1500–1700"
- },
- {
-  "source": "foto",
   "file": "fotos/1500-1700/fb_306276535.jpg",
   "title": "",
   "year": null,
@@ -4230,22 +4193,5 @@
   "year": null,
   "circa": false,
   "period": "1500–1700"
- },
- {
-  "source": "foto",
-  "file": "fotos/1500-1700/el_puerto_durante_los_siglos_xv_al.jpg",
-  "title": "EL PUERTO DURANTE LOS SIGLOS XV AL XVIII",
-  "year": null,
-  "circa": false,
-  "period": "1500–1700"
- },
- {
-  "activo": true,
-  "source": "youtube",
-  "id": "FGMGIoo_UEM",
-  "title": "POR COMPLETAR — pon aquí el título",
-  "year": null,
-  "circa": false,
-  "_nota": "YouTube no dejó leer los datos; escribe título y año a mano"
  }
 ]
